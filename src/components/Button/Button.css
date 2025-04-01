@@ -1,0 +1,21 @@
+.btn{
+    padding: 1.563rem  1.375rem;
+    border:none;
+    border-radius: 3rem;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* Button with gradient */
+.btn.gradient {
+    background: linear-gradient(to right, #78F1B1 0%, #477B53 42%, #314529 98%);
+    color: white;
+   
+}
+
+/* White background button */
+.btn.white {
+    background-color: white;
+    color: #436D4D;
+   
+}

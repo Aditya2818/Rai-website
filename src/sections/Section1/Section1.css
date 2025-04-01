@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap");
+
+@font-face {
+  font-family: "Mouzambik Demo";
+  src: url("./assets/fonts/Mouzambik.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "Livvic";
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.section1-div1 {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 54px;
+  margin-top: 106px;
+  padding: 5px 0px;
+}
+
+.section1-div1-first {
+  color: white;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  font-size: 26px;
+  line-height: 33px;
+}
+
+.section1-div1-h1 {
+  text-align: center;
+  color: #fcfffe;
+  font-family: "Bonheur Royale", cursive;
+  font-size: 80px;
+  font-weight: lighter;
+  margin: 0px auto;
+}
+
+.section1-div1-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 17px;
+}
+
+.section1-image1 {
+  position: absolute;
+  left: 0px;
+  top: 45%;
+}
+
+.section1-div1-h2 {
+  font-family: "Mouzambik", sans-serif;
+  color: #fcfffe;
+  color: linear-gradient(to right, #ffffff 0%, #ffe14c 94%);
+  margin: 0px;
+}
+
+.section1-div1-second {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+.section1-div2 {
+  margin: 97px auto 0px;
+  width: 841.59px;
+  position: relative;
+}
+
+/* .artistry-business-container {
+  position: relative;
+  width: 100%;
+  color: white;
+  overflow: hidden;
+} */
+
+.artistry-section {
+  position: absolute;
+  top: 107px;
+  left: 43.9px;
+  z-index: 3;
+  text-align: left;
+}
+
+.business-section {
+  position: absolute;
+  top:749px;
+  left: 523.59px;
+  z-index: 3;
+  text-align: right;
+}
+
+/* .main-title {
+  font-family: "Brush Script MT", cursive; 
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+} */
+
+/* .sub-item {
+  font-size: 1.2rem;
+  margin: 0.2rem 0;
+} */
+
+.performer-image {
+  position: absolute;
+  top: 0px;
+  left: 117.59px;
+  right: 90px;
+  bottom: 35px;
+  z-index: 1;
+}
