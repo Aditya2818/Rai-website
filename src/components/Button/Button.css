@@ -1,21 +1,35 @@
-.btn{
-    padding: 1.563rem  1.375rem;
-    border:none;
-    border-radius: 3rem;
-    font-weight: bold;
-    font-size: 24px;
+.btn {
+  padding: 1.563rem 1.375rem;
+  border: none;
+  border-radius: 3rem;
+  font-weight: bold;
+  font-size: 24px;
 }
 
 /* Button with gradient */
 .btn.gradient {
-    background: linear-gradient(to right, #78F1B1 0%, #477B53 42%, #314529 98%);
-    color: white;
-   
+  background: linear-gradient(to right, #78f1b1 0%, #477b53 42%, #314529 98%);
+  color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+  border: none;
+}
+
+.btn.gradient::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 3rem;
+  padding: 1px;
+  background: linear-gradient(#f9eeb4, #fefdf9);
+  -webkit-mask: linear-gradient(white, white) content-box,
+    linear-gradient(white, white);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
 }
 
 /* White background button */
 .btn.white {
-    background-color: white;
-    color: #436D4D;
-   
+  background-color: white;
+  color: #436d4d;
 }

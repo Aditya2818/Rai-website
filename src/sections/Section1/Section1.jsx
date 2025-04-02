@@ -24,9 +24,9 @@ const Section1 = () => {
 
         <div className="section1-div1-second">
           <p className="section1-div1-h1">We help you</p>
-          <p className="section1-div1-h2">
-            TRANSFORM YOUR ART <br /> INTO YOUR BUSINESS.
-          </p>
+          <span className="section1-div1-h2">
+            TRANSFORM YOUR ART INTO <span className=" section1-div1-h2 no-space"> YOUR BUSINESS.</span>
+          </span>
         </div>
         <div className="section1-div1-buttons">
           <Button variant="white" text="Explore Our Workshops" />
@@ -36,16 +36,22 @@ const Section1 = () => {
       <div className="section1-div2">
         {/* Artistry section - top left */}
         <div className="artistry-section">
-          <h2 className="main-title">Artistry</h2>
+          <span className="main-title">Artistry</span>
+          <div className="sub-item-holder">
           <p className="sub-item">Skill</p>
           <p className="sub-item">Technique</p>
+          </div>
+          <img className="artistery-layer" src="Layer_1.png"/>
         </div>
 
         {/* Business section - bottom right */}
         <div className="business-section">
           <h2 className="main-title">Business</h2>
+          <div className="sub-item-holder-business">
           <p className="sub-item">Marketing</p>
           <p className="sub-item">Fundraising</p>
+          </div>
+          <img className="business-layer" src="Layer_1.png"/>
         </div>
         {/* Connecting arrow */}
         <img
@@ -61,6 +67,14 @@ const Section1 = () => {
           className="performer-image"
         />
       </div>
+
+      <img className="section1-small-circle" src="dark_small_circle.png"/>
+      {/* <img className="section1-gradient-circle" src="light_green_gradient.png"/> */}
+      <img className="section1-large-circle" src="dark_large_circle.png"/>
+      <img className="section1-gradient-large-circle" src="light_green_gradient.png"/>
+      <img className="section1-small-circle-2" src="dark_small_circle.png"/>
+      <img className="section1-gradient-circle-2" src="light_green_gradient.png"/>
+     
     </div>
   );
 };

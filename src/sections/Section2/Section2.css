@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+.section2{
+    background-color: #fffcb3;
+    margin-top: 15%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 0.5rem;  /*for testing*/
+}
+.section2-top-div{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.section2-heading{
+    font-family: 'Anton';
+    text-align: center;
+    font-size: 150px;
+    color: #314529;
+}
+
+.section2-first-heading{
+    color: #F8FFD9;
+    font-family: 'Anton';
+    text-shadow: 
+    -2px -2px 0 #314529,  
+     2px -2px 0 #314529,
+    -2px  2px 0 #314529,
+     2px  2px 0 #314529;
+}
+
+.section2-sub-heading{
+    font-weight: bold;
+    font-size: 38px;
+    color: #314529;
+    text-align: center;
+    margin-top: -30px;
+    
+}
+
+.section2-mid-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    margin-top: 10%;
+}
+
+.section2-btn{
+    margin: 8% auto;
+}

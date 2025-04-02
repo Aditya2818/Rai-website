@@ -1,0 +1,32 @@
+.section2-card{
+    background-color: #314529;
+    border-radius: 31px;
+    width: 25%;
+    height:30vh;
+    color: white;
+    padding: 78px 23px 39px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+.section2-card p{
+    margin-bottom: 0;
+}
+.section2-card-text{
+    text-align: center;
+    font-size: 17px;
+}
+
+.section2-card-heading{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.section2-card-image{
+    position: absolute;
+    top:-20%
+}
