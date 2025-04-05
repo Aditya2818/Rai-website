@@ -6,6 +6,7 @@ import Button from '../../components/Button/Button'
 const Section2 = () => {
   return (
     <div className='section2'>
+      <img className='section2-signal' src="./Layer_1.png"/>
         <div className="section2-top-div">
             <span className="section2-heading"><span className="section2-first-heading">THE RAI</span> APPROACH</span>
             <span className="section2-sub-heading">Bridging artistry and business</span>

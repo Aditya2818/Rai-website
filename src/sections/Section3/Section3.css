@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+.section3{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+}
+.section3-top-img{
+    margin: auto;
+}
+.section3-ellipse{
+    margin-top: 40%;
+}
+.section3-profile-img{
+    position: absolute;
+    top: -5%;
+    right: 36%;
+}
+.section3-heading{
+    font-size: 96px;
+    font-family: 'Anton';
+    color: white;
+    margin-top: -10%;
+    z-index: 1;
+    
+}
+.section3-first-heading{
+    color: #314529;
+    text-shadow: 
+    -2px -2px 0 white,  
+     2px -2px 0 white,
+    -2px  2px 0 white,
+     2px  2px 0 white;
+     font-family: 'Anton';
+}
+.section3-second-heading{
+    font-family: 'Anton';
+}
+
+.section3-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+  }
+  
+  .workshop-card {
+    background-color: #3D6643;
+    padding: 24px;
+    display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   gap: 31px;
+    border: 1px solid #F9EEB4;
+    color: white;
+    
+    height: 80%;
+    border-radius: 34px;
+  }
+  
+  .icon-container {
+    margin-top: 14px;
+  }
+  
+ 
+  
+  .workshop-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: white;
+    font-weight: 900px;
+  }
+  
+  .workshop-description {
+    font-size: 17px;
+    line-height: 20px;
+    color: white;
+  }
+
+.section3-layer{
+    position:absolute;
+    top: 30%;
+    left: 15%;
+    transform: rotate(180deg);
+}
+
+.Section3-button{
+  margin: 3% auto;
+}
+
+
+  @media (max-width: 768px) {
+    .workshops-container {
+      grid-template-columns: 1fr;
+    }
+  }

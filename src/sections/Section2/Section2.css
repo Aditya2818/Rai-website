@@ -52,3 +52,13 @@
 .section2-btn{
     margin: 8% auto;
 }
+
+.section2-signal{
+    transform: rotate(180deg);
+    position: absolute;
+    top: -1.5%;
+    right: 15%;
+    width: 16.75rem; 
+  height: 5.90rem;
+}
+
