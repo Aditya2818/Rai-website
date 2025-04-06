@@ -1,44 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 
-.section7{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 3rem auto;
+.section7 {
+    position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 3rem auto;
+  width:100%;
+  overflow: hidden;
 }
-.section7-heading1{
-    font-family: 'Bonheur Royale';
-    font-size: 76px;
-    color: #F9EEB4;
+.section7-heading1 {
+  font-family: "Bonheur Royale";
+  font-size: 76px;
+  color: #f9eeb4;
 }
-.section7-heading2{
-    display: block;
-    font-family: 'Anton';
-    font-size: 109px;
+.section7-heading2 {
+  display: block;
+  font-family: "Anton";
+  font-size: 109px;
+}
+.section7-heading2-text1 {
+  font-family: "Anton";
+  color: #314529;
+  text-shadow: -2px -2px 0 #ffffff, 2px -2px 0 #ffffff, -2px 2px 0 #ffffff,
+    2px 2px 0 #ffffff;
+  letter-spacing: 3px;
+}
 
-}
-.section7-heading2-text1{
-    font-family: 'Anton';
-    color: #314529;
-    text-shadow: 
-    -2px -2px 0 #FFFFFF,  
-     2px -2px 0 #FFFFFF,
-    -2px  2px 0 #FFFFFF,
-     2px  2px 0 #FFFFFF;
-     letter-spacing:3px; 
+.section7-heading2-text2 {
+  font-family: "Anton";
+  color: #ffffff;
+  text-shadow: -2px -2px 0 #f9eeb4, 2px -2px 0 #f9eeb4, -2px 2px 0 #f9eeb4,
+    2px 2px 0 #f9eeb4;
+  letter-spacing: 3px;
 }
 
-.section7-heading2-text2{
-    font-family: 'Anton';
-    color: #FFFFFF;
-    text-shadow: 
-    -2px -2px 0 #F9EEB4,  
-     2px -2px 0 #F9EEB4,
-    -2px  2px 0 #F9EEB4,
-     2px  2px 0 #F9EEB4;
-     letter-spacing:3px;    
+.section7-gradient-circle-1{
+    position: absolute;
+    top: 0;
 }
 

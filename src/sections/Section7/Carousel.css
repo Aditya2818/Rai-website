@@ -1,0 +1,150 @@
+.testimonial-carousel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 40px 20px;
+ 
+ 
+}
+
+.testimonial-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 472px;
+  margin-bottom: 20px;
+}
+
+.testimonial-card {
+  transition: all 0.5s ease;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #376643;
+  border-radius: 38px;
+  box-shadow: 0 5px 75px 4px rgba(0, 0, 0, 0.27);
+  padding: 30px;
+}
+
+.testimonial-card.active {
+  width: 400px;
+  height: 380px;
+  z-index: 3;
+  transform: scale(1);
+  opacity: 1;
+  padding: 0px 60px;
+  
+}
+
+.testimonial-card.left,
+.testimonial-card.right {
+  width: 324px;
+  height: 256px;
+  z-index: 2;
+  padding-left: 40px;
+  padding-right: 30px;
+}
+
+.testimonial-card.left {
+  transform: translateX(-100%) scale(0.8);
+}
+
+.testimonial-card.right {
+  transform: translateX(100%) scale(0.8);
+}
+
+
+
+
+.testimonial-content{
+  margin-top: 40px;
+}
+
+
+
+.quote {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.author-info {
+  margin-top: auto;
+}
+
+.name {
+  margin: 0;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.role {
+  margin: 5px 0 0;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+}
+
+
+.testimonial-card.active > .testimonial-content{
+  margin-top: 20px;
+}
+
+.testimonial-card.active .quote,
+.testimonial-card.active .name,
+.testimonial-card.active .role {
+  font-size: 19px;
+  line-height: 25px;
+}
+
+
+.dots-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid #FFE14C;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  background-color: #FFFEB2;
+  border: none;
+  transform: scale(1.2);
+}
+
+.profile-image-wrapper {
+  position: relative;
+  margin-top: -90px; 
+  z-index: 4;
+}
+
+.profile-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+
+.profile-image.active-img {
+  width: 220px;
+  height: 220px;
+  margin-top: -40px;
+}

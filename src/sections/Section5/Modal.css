@@ -1,0 +1,22 @@
+.Modal{
+    width:69.3%;
+    border-radius: 58px;
+    background-color: #3C5532;
+    opacity: 0.98;
+    border: 1px solid #FFE14C;
+    padding: 45px;
+    margin:0px auto;
+    color:white;
+    line-height: 22px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.first-para{
+    display: flex;
+}
+
+.kira-img{
+    margin-top: -5rem;
+}

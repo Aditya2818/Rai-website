@@ -1,16 +1,26 @@
 import React from "react";
 import "./Section7.css";
+import TestimonialCarousel from "./TestimonialCarousel";
+
+
 
 const Section7 = () => {
   return (
     <div className="section7">
-      <p>
+        
+      <div>
         <span className="section7-heading1">Here From</span>
         <span className="section7-heading2">
             <span className="section7-heading2-text1">OUR </span>
             <span className="section7-heading2-text2">CLIENTS</span>
         </span>
-      </p>
+      </div>
+     <TestimonialCarousel/>
+    
+     {/* <img className="section7-gradient-circle-1" src="light_green_gradient.png"/>
+     <img className="section7-gradient-circle-2" src="light_green_gradient.png"/> */}
+
+
     </div>
   );
 };
