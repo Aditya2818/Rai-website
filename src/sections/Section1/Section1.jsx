@@ -69,7 +69,7 @@ const Section1 = () => {
       </div>
 
       <img className="section1-small-circle" src="dark_small_circle.png"/>
-      {/* <img className="section1-gradient-circle" src="light_green_gradient.png"/> */}
+      <img className="section1-gradient-circle" src="light_green_gradient.png"/>
       <img className="section1-large-circle" src="dark_large_circle.png"/>
       <img className="section1-gradient-large-circle" src="light_green_gradient.png"/>
       <img className="section1-small-circle-2" src="dark_small_circle.png"/>

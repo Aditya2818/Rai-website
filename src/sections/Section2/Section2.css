@@ -2,12 +2,13 @@
 
 .section2{
     background-color: #fffcb3;
-    margin-top: 15%;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-bottom: 0.5rem;  /*for testing*/
+    overflow: hidden;
+  width: 100%;
 }
 .section2-top-div{
     padding: 1rem;

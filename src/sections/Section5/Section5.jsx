@@ -6,7 +6,7 @@ const Section5 = () => {
   return (
     <div className="section5">
       <div className="section5-content">
-        <span className="comma1">"</span>
+        <img className="comma1" src="./opening.png"/>
         <div className="section5-text">
           <span className="section5-text1">
             I have been dancing all my life and dreamed of becoming a
@@ -52,7 +52,7 @@ const Section5 = () => {
           </div>
         </div>
 
-        <span className="comma2">"</span>
+        <img className="comma2" src="./closing.png"/>
       </div>
     </div>
   );
