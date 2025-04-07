@@ -20,7 +20,7 @@ const Section4 = () => {
           </span>
           <div className="section4-description">
             <p>
-            At Rai Arts Initiative, our mission is to equip aspiring dancers with the essential business knowledge and skills needed to navigate a successful and sustainable career in dance.
+            At  Rai  Arts Initiative, our mission is to equip aspiring dancers with the essential business knowledge and skills needed to navigate a successful and sustainable career in dance.
             </p>
 
 

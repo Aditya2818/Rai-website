@@ -6,6 +6,7 @@
   margin: 0px;
   overflow: hidden;
   width: 100%;
+  color: #FAFAD8;
 }
 
 .section6-content {
@@ -23,10 +24,11 @@
   width: 100%;
   
   border-radius: 25px;
+  
   width: 45%;
   font-weight: bold;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 11px 11px 39px 0 rgba(0, 0, 0, 0.25);;
+  border: 1px solid #092C11;
+  box-shadow: 14px 11px 10.3px 0 rgba(0, 0, 0, 0.18);;
 }
 .form-heading {
   font-weight: bold;
@@ -57,10 +59,10 @@
 }
 
 .input-group input,
-.input-group select {
+.input-group select,.input-group textarea {
   padding: 1rem;
   border-radius: 14px;
-  border: 1px solid #ccc;
+  border: 1px solid #86A38D;
   font-size: 1rem;
   background: #fffdeb;
 }
@@ -74,7 +76,7 @@
 
 
 .submit-button {
-  margin-top: 8rem;
+  margin-top: 1.5rem;
   border: none;
   padding: 0.75rem 2rem;
   color: white;

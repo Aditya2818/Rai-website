@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 
 
 .section5 {
@@ -38,40 +40,47 @@
   z-index: 2;
 }
 
-.section5-text span {
-  font-size: 20px;
-  display: block;
-  line-height: 31px;
-}
 .section5-text1,.section5-text3,.section5-text5,.section5-text6,.section5-text7{
     text-align: center;
+    font-size: 20px;
+    line-height: 31px;
+    display: block;
+}
+.section5-text2,.section5-text4{
+  font-size: 20px;
+    line-height: 31px;
+    display: block;
 }
 .section5-text7{
-    font-weight: bold;
+    font-weight: 700;
+    
 }
 .section5-text-last{
     margin-top: 25px;
+    text-align: center;
 }
 .section5-text8{
     text-align: center;
     color: white;
     font-size: 27px;
+    font-weight: 400;
 }
 .section5-btn{
     text-align: center;
-    margin-top: 35%;
+    margin-top: 36%;
 }
-.comma1,.comma2{
-    position: absolute;
-    font-family: 'Bangers';
-    font-weight: 900;
-    font-size: 230px;
+
+.comma-open, .comma-close{
+  font-family: 'Anton';
+  font-size: 230px;
+  position: absolute;
 }
-.comma1{
-    top: -10%;
-    left: -15%;
+.comma-open{
+  left: -17%;
+  top: -12%;
 }
-.comma2{
-    top: 35.5%;
-    right: -15%;
+
+.comma-close{
+  top: 30%;
+  right: -5%;
 }

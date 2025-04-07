@@ -11,7 +11,7 @@ const Section3 = () => {
         <img className="section3-ellipse" src="./Ellipse.png"/>
         <img className="section3-profile-img" src="./quote.png"/>
         </div>
-       <img className='section3-layer' src="./Layer_1.png"/>
+       <img className='section3-layer' src="./Layer_2.png"/>
         <div className="section3-heading"> 
           <span className="section3-first-heading">OUR EXCLUSIVE </span>
         <span className="section3-second-heading">WORKSHOPS</span>

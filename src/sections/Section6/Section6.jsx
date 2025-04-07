@@ -73,7 +73,7 @@ const Section6 = () => {
             <label>Interested in:</label>
             <select name="workshop" onChange={handleChange} required defaultValue="">
                
-              <option value="" disabled>If workshop: Select workshop name</option>
+              <option value="" disabled>Workshop Interested in</option>
               <option value="Arts Administration: Unlocking a New Stream of Income">Arts Administration: Unlocking a New Stream of Income</option>
               <option value="Producing Your Own Work: From Idea to Stage">Producing Your Own Work: From Idea to Stage</option>
               <option value="Dance Contract Essentials: From Clause to Confidence">
@@ -81,6 +81,11 @@ const Section6 = () => {
               </option>
               <option value="Fundraising and Grant Writing for Dancers">Fundraising and Grant Writing for Dancers</option>
             </select>
+          </div>
+
+          <div className="input-group full-width">
+            <label>Summary</label>
+            <textarea id="summary" name="summary" rows="3" ></textarea>
           </div>
     
           <button type="submit" className="submit-button">

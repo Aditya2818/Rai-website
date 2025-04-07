@@ -27,8 +27,8 @@ const Section5 = () => {
         <Modal modalRef={modalRef} />
       ) : (
         <div className="section5-content">
-          <img className="comma1" src="./opening.png" />
           <div className="section5-text">
+            <div className="comma-open">“</div>
             <span className="section5-text1">
               I have been dancing all my life and dreamed of becoming a
             </span>
@@ -57,7 +57,7 @@ const Section5 = () => {
               much as they need master classes and auditions.
             </span>
             <br></br>
-            <br></br>
+
             <p className="section5-text7">
               We must learn how to manage the business that is ourselves.
             </p>
@@ -66,6 +66,7 @@ const Section5 = () => {
               <span className="section5-text7">
                 Director, Rai Arts Initiative
               </span>
+              <div className="comma-close">”</div>
             </div>
 
             <div className="section5-btn" onClick={() => setIsOpen(true)}>
@@ -73,7 +74,7 @@ const Section5 = () => {
             </div>
           </div>
 
-          <img className="comma2" src="./closing.png" />
+         
         </div>
       )}
     </div>

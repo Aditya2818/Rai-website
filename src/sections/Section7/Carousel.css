@@ -5,7 +5,7 @@
   width: 100%;
   overflow: hidden;
   margin: 0 auto;
-  padding: 40px 20px;
+  margin-top: 5%;
  
  
 }
@@ -30,7 +30,7 @@
   background-color: #376643;
   border-radius: 38px;
   box-shadow: 0 5px 75px 4px rgba(0, 0, 0, 0.27);
-  padding: 30px;
+ 
 }
 
 .testimonial-card.active {
@@ -48,8 +48,7 @@
   width: 324px;
   height: 256px;
   z-index: 2;
-  padding-left: 40px;
-  padding-right: 30px;
+  padding: 0px 20px;
 }
 
 .testimonial-card.left {
@@ -64,7 +63,8 @@
 
 
 .testimonial-content{
-  margin-top: 40px;
+  
+  padding: 1rem;
 }
 
 
@@ -132,7 +132,8 @@
 .profile-image-wrapper {
   position: relative;
   margin-top: -90px; 
-  z-index: 4;
+
+  
 }
 
 .profile-image {
@@ -140,11 +141,12 @@
   height: 100px;
   object-fit: cover;
   border-radius: 50%;
+  border: 2px solid #E5EBA4;
   transition: all 0.5s ease;
 }
 
 .profile-image.active-img {
-  width: 220px;
-  height: 220px;
+  width: 180px;
+  height: 180px;
   margin-top: -40px;
 }
