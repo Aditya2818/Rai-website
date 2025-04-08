@@ -20,7 +20,8 @@
 .section3-profile-img {
   position: absolute;
   top: 4%;
-  right: 36%;
+  left: 52.5%;
+  transform: translateX(-50%);
 }
 .section3-heading {
   font-size: 96px;
@@ -46,25 +47,26 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
   margin: 45px auto;
+ 
 }
 
 .workshop-card {
   background-color: #3d6643;
   padding: 24px;
-  padding-bottom: 0px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   gap: 31px;
   border: 1px solid #f9eeb4;
   color: white;
-  width: 552px;
-  height: 291px;
+  width: 550px; 
+  height: 250px;
   border-radius: 34px;
 }
 
 .icon-container {
   margin-top: 14px;
+  margin-left: -5px;
 }
 
 .workshop-title {
@@ -85,7 +87,7 @@
 
 .section3-layer {
   position: absolute;
-  top: 27.58%;
+  top: 25.85rem;
   left: 14%;
   width: 241px;
   height: 85px;
@@ -101,3 +103,50 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 1024px) and (min-width: 600px) {
+  .section3-profile-img{
+    left: 53%;
+  }
+  .section3-heading {
+    font-size: 70px;
+  }
+  .section3-layer{
+    width:217.28px;
+    height: 76.6px;
+    top: 26.8rem;
+  }
+  .workshop-card{
+    width:400px;
+    height: 290px;
+    
+  }
+  .workshop-description{
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .workshop-title{
+    font-size: 17px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 1023px) and (min-width: 600px) {
+  .section3-grid{
+    grid-template-columns: 1fr;
+  }
+  .workshop-card{
+    width: 550px;
+    gap: 20px; 
+    height: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section3-grid {
+    grid-template-columns: 1fr;
+    gap: 20px; 
+    margin: 30px 16px; 
+  }
+}
+

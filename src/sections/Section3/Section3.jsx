@@ -1,6 +1,5 @@
 import React from 'react'
 import "./Section3.css"
-import Card from './Cards/Card';
 import workshops from './Workshops';
 import Button from '../../components/Button/Button';
 

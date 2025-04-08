@@ -65,10 +65,7 @@
     font-size: 27px;
     font-weight: 400;
 }
-.section5-btn{
-    text-align: center;
-    margin-top: 36%;
-}
+
 
 .comma-open, .comma-close{
   font-family: 'Anton';
@@ -83,4 +80,40 @@
 .comma-close{
   top: 30%;
   right: -5%;
+}
+.section5-btn{
+  text-align: center;
+}
+
+.section5-button{
+  margin-top: 18rem;
+}
+
+@media (max-width: 1024px) and (min-width: 600px) {
+  .comma-open{
+    left: -9rem;
+  }
+  .section5-content{
+    text-align: center;
+  }
+  .section5-content span{
+    display: inline;
+  }
+  .section5-text-last span{
+    display: block;
+  }
+  .comma-close{
+    top: 14rem;
+    right: -9rem;
+  }
+  .section5{
+    background-position: -14rem center; 
+  }
+  
+  
+}
+@media (max-width: 1023px) and (min-width: 600px) {
+  .section5-button{
+    margin-top: 10rem;
+  }
 }

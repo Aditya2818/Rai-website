@@ -92,3 +92,16 @@
 select:invalid {
   color: gray;
 }
+
+@media (max-width: 1024px) and (min-width: 600px) {
+  .section6-img{
+    display: none;
+  }
+  .section6-content{
+    padding: 0px;
+    margin: 3rem 5rem;
+  }
+  .section6-form{
+    width: 100%;
+  }
+}

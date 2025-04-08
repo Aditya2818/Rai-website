@@ -70,7 +70,7 @@ const Section5 = () => {
             </div>
 
             <div className="section5-btn" onClick={() => setIsOpen(true)}>
-              <Button variant="gradient" text="Learn more about Kira" />
+              <Button className="section5-button" variant="gradient" text="Learn more about Kira" />
             </div>
           </div>
 

@@ -22,7 +22,7 @@ const Section6 = () => {
   return (
     <div className="section6">
       <div className="section6-content">
-        <img src="./Photo.png" />
+        <img className="section6-img" src="./Photo.png" />
         <form className="section6-form" onSubmit={handleSubmit}>
           <span className="form-heading">
             Share your info and we’ll reach out!
