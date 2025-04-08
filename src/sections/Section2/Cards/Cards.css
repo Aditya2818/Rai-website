@@ -33,3 +33,10 @@
     position: absolute;
     top:-20%
 }
+
+@media (max-width: 768px) {
+    .section2-card{
+        width: 18rem;
+    height: 12rem;
+    }
+}

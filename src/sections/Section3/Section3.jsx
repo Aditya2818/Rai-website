@@ -29,7 +29,7 @@ const Section3 = forwardRef(({ onNavigate }, ref) => {
       ))}
         </div>
         <div className="Section3-button">
-        <Button behaviour={onNavigate.toSection6}  text={"Enroll in a workshop"} variant='gradient'/>
+        <Button behaviour={onNavigate.toSection6}  text={"Enroll in a workshop"} variant='gradient' className={"sec-3-btn"}/>
           </div>
     </div>
   )

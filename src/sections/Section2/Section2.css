@@ -96,3 +96,27 @@
     margin: 4.5rem auto;
   }
 }
+
+@media (max-width: 768px) {
+  .section2-heading{
+    font-size:40px;
+  }
+  .section2-signal{
+    width:145.88px;
+    height: 51.43px;
+    top: 0.4rem;
+    right: 3rem;
+  }
+  .section2-sub-heading{
+    font-size: 20px;
+    margin-top: -10px;
+  }
+  .section2-mid-div{
+    margin-top: 5rem;
+    gap: 6rem;
+  }
+  .section2-button{
+   font-size: 20px;
+   line-height: 0px;
+  }
+}
