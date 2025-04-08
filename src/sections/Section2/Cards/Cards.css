@@ -1,10 +1,11 @@
 .section2-card{
     background-color: #314529;
     border-radius: 31px;
-    width: 25%;
-    height:30vh;
+    width: 22rem;
+    height:12rem;
     color: white;
-    padding: 70px 23px 45px 23px;
+    padding: 70px 23px 45px 25px;
+    padding-bottom: 66px;
     display: flex;
     flex-direction: column;
     gap: 8px;

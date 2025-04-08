@@ -51,10 +51,13 @@
 
 .section2-mid-div {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap; 
   align-items: center;
   gap: 22px;
   margin-top: 7%;
+
 }
 
 .section2-btn {
@@ -67,4 +70,29 @@
   right: 25%;
   width: 16.75rem;
   height: 5.9rem;
+}
+
+@media (max-width: 1024px) and (min-width: 600px) {
+  .section2-heading{
+    font-size: 70px;
+  }
+  .section2-signal{
+    width:217.28px;
+    height: 76.6px;
+    top: -1.8rem;
+  }
+  .section2-sub-heading{
+    font-size: 31px;
+  }
+  .section2-mid-div{
+    row-gap: 5.5rem; 
+  }
+  .section2-button{
+    font-size: 25px;
+    padding: 22px 25px;
+    max-width: 300px;
+  }
+  .section2-btn{
+    margin: 4.5rem auto;
+  }
 }

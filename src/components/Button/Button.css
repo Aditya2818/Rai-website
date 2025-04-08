@@ -64,3 +64,24 @@
   background-color: #ecfff6; 
   transform: translateY(-3px);
 }
+
+@media (max-width: 1024px) and (min-width: 600px) {
+  .btn {
+    padding: 12px 25px;
+    font-size: 23px;
+    line-height: 1.4;
+    max-width: 300px; 
+    white-space: normal; 
+    text-align: center; 
+  }
+}
+
+@media (max-width: 1023px) and (min-width: 600px) {
+  .btn {
+    padding: 12px 25px;
+    max-width: 250px; 
+  }
+  .section1-small-circle-2{
+    display: none;
+  }
+}

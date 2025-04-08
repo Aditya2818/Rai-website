@@ -19,14 +19,19 @@ const Section1 = () => {
           <span style={{ color: "#F9EEB4" }}>
             business knowledge, entrepreneurial skills
           </span>
-          , &<span style={{ color: "#F9EEB4" }}> confidence</span>.
+          , &<span style={{ color: "#F9EEB4" }} className="confidence"> confidence</span><span className="fstop">.</span>
         </div>
 
         <div className="section1-div1-second">
           <p className="section1-div1-h1">We help you</p>
-          <span className="section1-div1-h2">
-            TRANSFORM YOUR ART INTO <span className=" section1-div1-h2 no-space"> YOUR BUSINESS.</span>
+          <span className="section1-div1-h2-desktop-only ">
+            TRANSFORM YOUR ART INTO <span className=" section1-div1-h2-desktop-only no-space"> YOUR BUSINESS.</span>
           </span>
+          <span className="section1-div1-h2-tablet-only">
+    TRANSFORM YOUR<br />
+    ART INTO YOUR<br />
+    BUSINESS.
+  </span>
         </div>
         <div className="section1-div1-buttons">
           <Button variant="white" text="Explore Our Workshops" />

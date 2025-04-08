@@ -19,3 +19,12 @@
     font-size: 18px;
     color:#314529;
 }
+
+
+@media (max-width: 1024px) and (min-width: 600px) {
+    .section1-nav{
+        width: 90%;
+        height: 6.1875rem;
+        padding: 0px 16px;
+    }
+}
