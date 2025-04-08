@@ -12,8 +12,14 @@ const TestimonialCarousel = () => {
       return "testimonial-card left";
   };
 
-  const handleDotClick = (index) => {
-    setActiveIndex(index);
+  const goToNext = () => {
+    setActiveIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+  };
+
+  const goToPrev = () => {
+    setActiveIndex(
+      (prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length
+    );
   };
 
   return (
@@ -33,7 +39,7 @@ const TestimonialCarousel = () => {
             <div className="testimonial-content">
               <p className="quote">"{testimonial.quote}"</p>
               <div className="author-info">
-                <span className="name">{testimonial.name}, </span>
+                <span className="name">{testimonial.name}</span>
                 <span className="role">{testimonial.title}</span>
               </div>
             </div>
@@ -43,13 +49,9 @@ const TestimonialCarousel = () => {
 
       {/*Dots */}
       <div className="dots-container">
-        {testimonials.map((_, index) => (
-          <div
-            key={index}
-            className={`dot ${index === activeIndex ? "active" : ""}`}
-            onClick={() => handleDotClick(index)}
-          />
-        ))}
+        <div className="dot" onClick={goToPrev} />
+        <div className="dot active" />
+        <div className="dot" onClick={goToNext} />
       </div>
     </div>
   );

@@ -10,51 +10,74 @@
 }
 
 .testimonial-carousel {
+  position: relative;
+  width: 100%;
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  width: 100%;
-  height: 472px;
-  margin-bottom: 20px;
 }
 
 .testimonial-card {
-  transition: all 0.5s ease;
   position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 400px;
+  height: 380px;
+  padding: 0 60px;
   background-color: #376643;
   border-radius: 38px;
   box-shadow: 0 5px 75px 4px rgba(0, 0, 0, 0.27);
- 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.5s ease;
+  opacity: 0.6;
+  z-index: 1;
+  transform: scale(0.9);
 }
 
 .testimonial-card.active {
-  width: 400px;
-  height: 380px;
-  z-index: 3;
   transform: scale(1);
+  z-index: 3;
   opacity: 1;
-  padding: 0px 60px;
-  
+}
+.testimonial-card.active .testimonial-content  .author-info .role{
+  font-weight: 400;
+  display: block;
+}
+.author-info .name::after {
+  content: ", ";
+}
+.testimonial-card.active .author-info .name::after{
+  content: "";
 }
 
-.testimonial-card.left,
+/* .testimonial-card.left,
 .testimonial-card.right {
-  width: 324px;
-  height: 256px;
+  width: 350px;
+  height: 300px;
   z-index: 2;
   padding: 0px 20px;
+} */
+.testimonial-card.left,
+.testimonial-card.right {
+  height: 300px; 
+  transform: scale(0.9);
+}
+.testimonial-card.left {
+  transform: translateX(-300px) scale(0.9);
+  z-index: 2;
 }
 
-.testimonial-card.left {
-  transform: translateX(-100%) scale(0.8);
+.testimonial-card.left img{
+  margin-right: 9rem;
 }
 
 .testimonial-card.right {
-  transform: translateX(100%) scale(0.8);
+  transform: translateX(300px) scale(0.9);
+  z-index: 2;
+}
+.testimonial-card.right img{
+  margin-left: 9rem;
 }
 
 
@@ -111,10 +134,16 @@
   transition: all 0.3s ease;
 }
 
+.dot:hover{
+  background-color: #FFFEB2;
+  opacity: 0.5;
+}
+
 .dot.active {
   background-color: #FFFEB2;
   border: none;
   transform: scale(1.2);
+  pointer-events: none; 
 }
 
 .profile-image-wrapper .profile-image.active-img  {
@@ -123,6 +152,7 @@
 }
 .profile-image-wrapper .profile-image{
   margin-top: -50px; 
+  
 }
 
 .profile-image {
@@ -138,3 +168,5 @@
   width: 180px;
   height: 180px;
 }
+
+
