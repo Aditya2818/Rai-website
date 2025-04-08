@@ -1,11 +1,11 @@
-import React from 'react'
+import React, {forwardRef} from 'react'
 import "./Section3.css"
 import workshops from './Workshops';
 import Button from '../../components/Button/Button';
 
-const Section3 = () => {
+const Section3 = forwardRef(({ onNavigate }, ref) => {
   return (
-    <div className="section3">
+    <div ref={ref} className="section3">
         <div className="section3-top-img">
         <img className="section3-ellipse" src="./Ellipse.png"/>
         <img className="section3-profile-img" src="./quote.png"/>
@@ -29,11 +29,11 @@ const Section3 = () => {
       ))}
         </div>
         <div className="Section3-button">
-        <Button  text={"Enroll in a workshop"} variant='gradient'/>
+        <Button behaviour={onNavigate.toSection6}  text={"Enroll in a workshop"} variant='gradient'/>
           </div>
     </div>
   )
 
-}
+})
 
 export default Section3;

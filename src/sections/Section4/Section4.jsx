@@ -1,10 +1,10 @@
-import React from "react";
+import React, {forwardRef} from "react";
 import "./Section4.css";
 import Button from "../../components/Button/Button";
 
-const Section4 = () => {
+const Section4 = forwardRef(({ onNavigate }, ref) => {
   return (
-    <div className="section4">
+    <div ref={ref} className="section4">
       <div className="sub-section4">
         <img className="sub-section4-img" src="./additional professional photo.png" />
         <div className="section4-right-content">
@@ -35,12 +35,12 @@ const Section4 = () => {
 
           </div>
           <div className="section4-btn">
-          <Button variant="gradient" text={"Book a Free Coaching Session"}/>
+          <Button behaviour={onNavigate.toSection6} variant="gradient" text={"Book a Free Coaching Session"}/>
           </div>
         </div>
       </div>
     </div>
   );
-};
+});
 
 export default Section4;

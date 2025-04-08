@@ -19,6 +19,9 @@
     font-size: 18px;
     color:#314529;
 }
+.section1-nav-left p, .section1-nav img{
+    cursor: pointer;
+}
 
 
 @media (max-width: 1024px) and (min-width: 600px) {

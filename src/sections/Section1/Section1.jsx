@@ -3,10 +3,10 @@ import "./Section1.css";
 import Nav from "./Nav/Nav";
 import Button from "../../components/Button/Button";
 
-const Section1 = () => {
+const Section1 = ({ onNavigate }) => {
   return (
     <div className="section1">
-      <Nav />
+      <Nav functionality={ onNavigate } />
       <div className="section1-image1">
         <img src="./hero_img.png" />
       </div>
@@ -34,8 +34,8 @@ const Section1 = () => {
   </span>
         </div>
         <div className="section1-div1-buttons">
-          <Button variant="white" text="Explore Our Workshops" />
-          <Button variant="gradient" text="Book A Free Coaching Session" />
+          <Button behaviour={onNavigate.toSection3} variant="white" text="Explore Our Workshops" />
+          <Button behaviour={onNavigate.toSection6} variant="gradient" text="Book A Free Coaching Session" />
         </div>
       </div>
       <div className="section1-div2">

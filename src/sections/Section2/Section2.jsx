@@ -3,7 +3,7 @@ import "./Section2.css"
 import Cards from './Cards/Cards'
 import Button from '../../components/Button/Button'
 
-const Section2 = () => {
+const Section2 = ({onNavigate}) => {
   return (
     <div className='section2'>
       
@@ -18,7 +18,7 @@ const Section2 = () => {
             <Cards heading={"Inspiring confidence"} text={"With everything we do, we aim to make dancers feel empowered and confident-in the studio & outside. Fostering their sense of self-worth through powerful knowledge, skills, and tools lies at the heart of our work."} source={"Profile3.png"}/>
         </div>
 
-        <div className='section2-btn'><Button className="section2-button" variant="gradient" text="Learn more about RAI"/></div>
+        <div className='section2-btn'><Button behaviour={onNavigate.toSection4} className="section2-button" variant="gradient" text="Learn more about RAI"/></div>
     </div>
   )
 }

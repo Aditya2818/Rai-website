@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, forwardRef } from "react";
 import "./Section6.css";
 
-const Section6 = () => {
+const Section6 = forwardRef((props,ref) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -20,7 +20,7 @@ const Section6 = () => {
   };
 
   return (
-    <div className="section6">
+    <div ref={ref} className="section6">
       <div className="section6-content">
         <img className="section6-img" src="./Photo.png" />
         <form className="section6-form" onSubmit={handleSubmit}>
@@ -95,6 +95,6 @@ const Section6 = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Section6;

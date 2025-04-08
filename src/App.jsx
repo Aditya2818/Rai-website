@@ -1,3 +1,4 @@
+import React, { useRef } from 'react';
 import './App.css'
 import Section1 from "./sections/Section1/Section1"
 import Section2 from './sections/Section2/Section2'
@@ -9,18 +10,52 @@ import Section7 from './sections/Section7/Section7'
 import Section8 from './sections/Section8/Section8'
 
 function App() {
+
+  const section4Ref = useRef(null);
+  const section3Ref = useRef(null);
+  const section6Ref = useRef(null);
+
+  const scrollToSection = (ref) => {
+    ref.current?.scrollIntoView({ behavior: 'smooth' });
+  };
  
 
   return (
     <>
-      <Section1/>
-      <Section2/>
-      <Section3/>
-      <Section4/>
+      <Section1 
+      onNavigate={{
+        toSection4: () => scrollToSection(section4Ref),
+        toSection3: () => scrollToSection(section3Ref),
+        toSection6: () => scrollToSection(section6Ref),
+      }}
+      />
+      <Section2
+      onNavigate={{
+        toSection4: () => scrollToSection(section4Ref),
+      }}
+      />
+      <Section3 
+      onNavigate={{
+        toSection6: () => scrollToSection(section6Ref)
+      }}
+      ref={section3Ref}
+      />
+      <Section4
+       onNavigate={{
+        toSection6: () => scrollToSection(section6Ref)
+      }}
+      ref={section4Ref}
+      />
       <Section5/>
-      <Section6/>
+      <Section6 ref={section6Ref}/>
       <Section7/>
-      <Section8/>
+      <Section8
+       onNavigate={{
+        toSection4: () => scrollToSection(section4Ref),
+        toSection3: () => scrollToSection(section3Ref),
+        toSection6: () => scrollToSection(section6Ref),
+      }}
+      />
     </>
   )
 }

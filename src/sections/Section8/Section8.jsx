@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Section8.css"
 
-const Section8 = () => {
+const Section8 = ({onNavigate}) => {
   return (
     <div className="section8">
         <div className="section8-left">
@@ -11,9 +11,9 @@ const Section8 = () => {
         <div className="section8-center">
             <p className='quick-link'>QUICK LINKS</p>
             <div className="links">
-                <p>About RAI</p>
-                <p>Our Workshops</p>
-                <p>Contact us</p>
+                <p onClick={() => onNavigate.toSection4()}>About RAI</p>
+                <p onClick={() => onNavigate.toSection3()}>Our Workshops</p>
+                <p onClick={() => onNavigate.toSection6()}>Contact us</p>
             </div>
         </div>
         <div className="section8-right">

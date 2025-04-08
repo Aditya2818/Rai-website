@@ -15,7 +15,6 @@
   align-items: center;
   position: relative;
   width: 100%;
-  overflow: hidden;
   height: 472px;
   margin-bottom: 20px;
 }
@@ -61,13 +60,6 @@
 
 
 
-.testimonial-content{
-  
-  padding: 1rem;
-}
-
-
-
 .quote {
   color: white;
   margin-bottom: 20px;
@@ -94,9 +86,6 @@
 }
 
 
-.testimonial-card.active > .testimonial-content{
-  margin-top: 20px;
-}
 
 .testimonial-card.active .quote,
 .testimonial-card.active .name,
@@ -128,9 +117,12 @@
   transform: scale(1.2);
 }
 
-.profile-image-wrapper {
+.profile-image-wrapper .profile-image.active-img  {
   position: relative;
-  margin-top: -90px; 
+  margin-top: -80px; 
+}
+.profile-image-wrapper .profile-image{
+  margin-top: -50px; 
 }
 
 .profile-image {

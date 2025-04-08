@@ -61,13 +61,13 @@
 }
 
 .section2-btn {
-  margin: 8% auto;
+  margin: 4rem auto;
 }
 
 .section2-signal {
   position: absolute;
-  top: -29%;
-  right: 25%;
+  top: -3.5rem;
+  right: 20rem;
   width: 16.75rem;
   height: 5.9rem;
 }

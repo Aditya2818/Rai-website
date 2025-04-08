@@ -88,6 +88,10 @@
   font-weight: bold;
   font-family: 'Urbanist';
 }
+.submit-button:hover{
+  background: linear-gradient(to right, #aafcd4 0%, #71b185 42%, #5e7a5a 98%);
+  transform: translateY(-3px);
+}
 
 select:invalid {
   color: gray;
