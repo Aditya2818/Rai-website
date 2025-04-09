@@ -32,6 +32,7 @@
   font-weight: 400;
   letter-spacing: 1.5px;
   text-align: center;
+  position: relative;
 }
 .section3-first-heading {
   color: #314529;
@@ -88,11 +89,12 @@
 
 .section3-layer {
   position: absolute;
-  top: 25.85rem;
-  left: 12rem;
+  top: -2.7rem;
+  left: 0;
   width: 241px;
   height: 85px;
   transform: scaleX(-1);
+  z-index: -1;
 }
 
 .Section3-button {
@@ -115,7 +117,7 @@
   .section3-layer{
     width:217.28px;
     height: 76.6px;
-    top: 26.8rem;
+    
   }
   .workshop-card{
     width:400px;
@@ -165,8 +167,7 @@
   .section3-layer{
     width: 88px;
     height: 31px;
-    top: 11rem;
-    left: 15rem;
+   
     
   }
   .workshop-card{

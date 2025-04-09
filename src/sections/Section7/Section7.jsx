@@ -8,7 +8,7 @@ const Section7 = () => {
   return (
     <div className="section7">
         
-      <div>
+      <div className="section7-heading">
         <span className="section7-heading1">Hear From</span>
         <img className='section7-signal' src="./Layer_2.png"/>
         <span className="section7-heading2">

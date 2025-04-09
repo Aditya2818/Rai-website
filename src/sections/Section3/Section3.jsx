@@ -10,8 +10,9 @@ const Section3 = forwardRef(({ onNavigate }, ref) => {
         <img className="section3-ellipse" src="./Ellipse.png"/>
         <img className="section3-profile-img" src="./quote.png"/>
         </div>
-       <img className='section3-layer' src="./Layer_2.png"/>
+       
         <div className="section3-heading"> 
+        <img className='section3-layer' src="./Layer_2.png"/>
           <span className="section3-first-heading">OUR EXCLUSIVE </span>
         <span className="section3-second-heading">WORKSHOPS</span>
         </div>

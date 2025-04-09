@@ -17,6 +17,7 @@
   flex-direction: column;
   justify-content: center;
   position: relative;
+  width: auto;
 }
 .section2-heading {
   font-family: "Anton";
@@ -63,14 +64,23 @@
 .section2-btn {
   margin: 4rem auto;
 }
+.section2-heading{
+  position: relative;
+  width: auto;
+  align-self:center;
+  z-index: 1;
+  
+}
 
 .section2-signal {
   position: absolute;
-  top: -3.5rem;
-  right: 20rem;
+  top: -4.4rem;
+  right: 0;
   width: 16.75rem;
   height: 5.9rem;
+  z-index: -1;
 }
+
 
 @media (max-width: 1024px) and (min-width: 600px) {
   .section2-heading{
@@ -79,7 +89,7 @@
   .section2-signal{
     width:217.28px;
     height: 76.6px;
-    top: -1.8rem;
+    top: -2.8rem;
   }
   .section2-sub-heading{
     font-size: 31px;
@@ -104,8 +114,7 @@
   .section2-signal{
     width:145.88px;
     height: 51.43px;
-    top: 0.4rem;
-    right: 3rem;
+    top: 0.7rem;
   }
   .section2-sub-heading{
     font-size: 20px;

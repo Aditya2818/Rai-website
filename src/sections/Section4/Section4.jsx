@@ -8,8 +8,9 @@ const Section4 = forwardRef(({ onNavigate }, ref) => {
       <div className="sub-section4">
         <img className="sub-section4-img" src="./additional professional photo.png" />
         <div className="section4-right-content">
-          <img className="section4-signal" src="./Layer_2.png"/>
+          
           <div className="section4-heading">
+          <img className="section4-signal" src="./Layer_2.png"/>
             <span className="section4-first-heading">ABOUT </span>
             <span className="section4-second-heading">RAI</span>
           </div>
