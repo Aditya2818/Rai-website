@@ -49,9 +49,9 @@ const TestimonialCarousel = () => {
 
       {/*Dots */}
       <div className="dots-container">
-        <div className="dot" onClick={()=>{goToPrev} }/>
+        <div className="dot" onClick={()=>{goToPrev()} }/>
         <div className="dot active" />
-        <div className="dot" onClick={()=>{goToNext} } />
+        <div className="dot" onClick={()=>{goToNext()} } />
       </div>
     </div>
   );
