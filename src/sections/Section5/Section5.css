@@ -40,7 +40,7 @@
   z-index: 2;
 }
 
-.section5-text1,.section5-text3,.section5-text5,.section5-text6,.section5-text7{
+.section5-text1,.section5-text3,.section5-text5,.section5-text6,.section5-text7,.section5-text9{
     text-align: center;
     font-size: 20px;
     line-height: 31px;
@@ -51,7 +51,7 @@
     line-height: 31px;
     display: block;
 }
-.section5-text7{
+.section5-text7,.section5-text9{
     font-weight: 700;
     
 }
@@ -123,6 +123,56 @@
     font-size: 96px;
   }
   .section5{
-
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
   }
+  .section5-content{
+    width: 75%;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0px;
+  }
+  .section5-content *{
+    line-height: 18px;
+    font-size: 16px;
+  }
+  .section5-text{
+    margin-top:5rem ;
+  }
+  .section5-text7{
+    font-size: 16px;
+  }
+  .comma-open,.comma-close{
+    font-size: 96px;
+  }
+  .comma-open{
+    top: 6rem;
+    left: -2rem;
+  }
+  .comma-close{
+    top: 23rem;
+    right: -2rem;
+  }
+  .section5-text2,.section5-text3,.section5-text4,.section5-text5,.section5-text6{
+    display: inline;
+  }
+  .section5-text7{
+    margin-top: 11rem;
+  }
+  .section5-text8{
+    font-size: 27px;
+  }
+  .section5-text9{
+    display: block;
+    margin-top: 5px;
+  }
+  .section5-btn{
+    margin-top: -14rem;
+  }
+  .section5-button{
+    padding: 14px;
+  }
+  
+
 }

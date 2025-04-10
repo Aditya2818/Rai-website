@@ -63,7 +63,7 @@ const Section5 = () => {
             </p>
             <div className="section5-text-last">
               <span className="section5-text8">KIRA RAI DANIEL</span>
-              <span className="section5-text7">
+              <span className="section5-text9">
                 Director, Rai Arts Initiative
               </span>
               <div className="comma-close">”</div>

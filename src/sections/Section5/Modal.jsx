@@ -5,7 +5,10 @@ import React from "react";
 const Modal = ({ modalRef }) => {
   return (
     <div className="Modal" ref={modalRef}>
+            
+            <div className="Modal-content"></div>
       <div className="first-para">
+      <img src="./kira.png" className="kira-img" />
         <div>
           <p>
             <b>Kira Rai Daniel</b> is the Founder and Director of the Rai Arts
@@ -23,7 +26,6 @@ const Modal = ({ modalRef }) => {
             Jamila Glass, and Stephanie Pizzo.
           </p>
         </div>
-        <img src="./kira.png" className="kira-img" />
       </div>
       <div>
         <p>
