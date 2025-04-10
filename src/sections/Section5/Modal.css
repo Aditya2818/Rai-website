@@ -1,41 +1,42 @@
-.Modal{
-    position: relative;
-    width:69.3%;
-    
-    background-color: #3C5532;
-    opacity: 0.98;
-   border: none;
-   border-radius: 58px;
-    padding: 45px;
-    margin:0px auto;
-    color:white;
-    line-height: 22px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 17px;
-    font-weight: 400;
+.Modal {
+  position: relative;
+  width: 69.3%;
+
+  background-color: #3c5532;
+  opacity: 0.98;
+  border: none;
+  border-radius: 58px;
+  padding: 45px;
+  margin: 0px auto;
+  color: white;
+  line-height: 22px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 17px;
+  font-weight: 400;
+  text-align: justify;
 }
 .Modal::before {
-    content: "";
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    border-radius: 70px;
-    border: 2px solid #FFE14C;
-    filter: blur(6px);
-    z-index: -1;
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 70px;
+  border: 2px solid #ffe14c;
+  filter: blur(6px);
+  z-index: -1;
 }
-.first-para{
-    display: flex;
+.first-para {
+  display: flex;
 }
 
-.kira-img{
-    margin-top: -5rem;
-    width: 450px;
-    height: 350px;
-    margin-right: -2rem;
+.kira-img {
+  margin-top: -5rem;
+  width: 450px;
+  height: 350px;
+  margin-right: -2rem;
 }

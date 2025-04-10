@@ -6,6 +6,12 @@ import Button from "../../components/Button/Button";
 const Section1 = ({ onNavigate }) => {
   return (
     <div className="section1">
+      <img className="section1-small-circle" src="dark_small_circle.png"/>
+      <img className="section1-gradient-circle" src="light_green_gradient.png"/>
+      <img className="section1-large-circle" src="dark_large_circle.png"/>
+      <img className="section1-gradient-large-circle" src="light_green_gradient.png"/>
+      <img className="section1-small-circle-2" src="dark_small_circle.png"/>
+      <img className="section1-gradient-circle-2" src="light_green_gradient.png"/>
       <Nav functionality={ onNavigate } />
       <div className="section1-image1">
         <img src="./hero_img.png" />
@@ -73,12 +79,7 @@ const Section1 = ({ onNavigate }) => {
         />
       </div>
 
-      <img className="section1-small-circle" src="dark_small_circle.png"/>
-      <img className="section1-gradient-circle" src="light_green_gradient.png"/>
-      <img className="section1-large-circle" src="dark_large_circle.png"/>
-      <img className="section1-gradient-large-circle" src="light_green_gradient.png"/>
-      <img className="section1-small-circle-2" src="dark_small_circle.png"/>
-      <img className="section1-gradient-circle-2" src="light_green_gradient.png"/>
+      
      
     </div>
   );

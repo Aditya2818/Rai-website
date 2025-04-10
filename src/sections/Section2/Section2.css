@@ -80,6 +80,18 @@
   height: 5.9rem;
   z-index: -1;
 }
+.white-gradient{
+  width: 534px;
+  height: 534px;
+  position: absolute;
+  top: -12px;
+  right: -18rem;
+}
+.section2-white-bubble{
+  position: absolute;
+  top: 2rem;
+  right: 10px;
+}
 
 
 @media (max-width: 1024px) and (min-width: 600px) {

@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 
+
 .section7 {
     position: relative;
   display: flex;
@@ -8,9 +9,25 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 3rem auto;
+padding-top: 3rem;
+padding-bottom: 3rem;
   width:100%;
   overflow: hidden;
+  z-index: 1;
+  
+}
+.section7-gradient-circle-1{
+  position: absolute;
+  top:-50%;
+  left: -65%;
+  z-index: -1;
+ 
+}
+.section7-gradient-circle-2{
+  position: absolute;
+  top:-50%;
+  right: -65%;
+  z-index: -1;
 }
 .section7-heading{
   position: relative;
@@ -43,10 +60,6 @@
   letter-spacing: 3px;
 }
 
-.section7-gradient-circle-1{
-    position: absolute;
-    top: 0;
-}
 
 .section7-signal{
   position: absolute;

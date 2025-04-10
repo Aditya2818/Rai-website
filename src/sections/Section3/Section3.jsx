@@ -6,6 +6,12 @@ import Button from '../../components/Button/Button';
 const Section3 = forwardRef(({ onNavigate }, ref) => {
   return (
     <div ref={ref} className="section3">
+      <img className='section3-gradient1' src="light_green_gradient.png"/>
+      <img className="section3-small-circle" src="dark_small_circle.png"/>
+      <img className="section3-large-circle" src="dark_large_circle.png"/>
+      <img className="section3-large-circle-2" src="dark_large_circle.png"/>
+      <img className='section3-gradient2' src="light_green_gradient.png"/>
+      <img className='section3-gradient3' src="light_green_gradient.png"/> 
         <div className="section3-top-img">
         <img className="section3-ellipse" src="./Ellipse.png"/>
         <img className="section3-profile-img" src="./quote.png"/>

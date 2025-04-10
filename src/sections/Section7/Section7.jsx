@@ -18,8 +18,8 @@ const Section7 = () => {
       </div>
      <TestimonialCarousel/>
     
-     {/* <img className="section7-gradient-circle-1" src="light_green_gradient.png"/>
-     <img className="section7-gradient-circle-2" src="light_green_gradient.png"/> */}
+     <img className="section7-gradient-circle-1" src="light_green_gradient.png"/>
+     <img className="section7-gradient-circle-2" src="light_green_gradient.png"/>
 
 
     </div>

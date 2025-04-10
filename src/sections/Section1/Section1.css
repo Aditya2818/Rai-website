@@ -147,21 +147,24 @@
 
 .section1-small-circle{
   position: absolute;
-  top: 22%;
+  top: 21.3%;
   right: 16.5%;
   z-index: -1;
 }
 .section1-gradient-circle{
+ 
   position: absolute;
-  top: 8%;
-  left:45%;
-
+  top: 10%;
+  right: -50%;
   z-index:-1;
 }
+
 .section1-large-circle{
   position: absolute;
+  width:382px;
+  height: 382px;
   top: 7%;
-  left: -15%;
+  left: -12%;
   z-index: -1;
 } 
 .section1-gradient-large-circle{
@@ -201,6 +204,14 @@
 }
 .section1-div1-h2-tablet-only {
   display: none;
+}
+
+.my-gradient{
+  position: absolute;
+}
+.bubble-top-right{
+  position: absolute;
+  top: 10rem;
 }
 
 /* Tablet breakpoint: 600px - 1024px */
