@@ -89,7 +89,6 @@
 .section3-layer {
   position: absolute;
   top: -2.7rem;
-  left: 0;
   width: 241px;
   height: 85px;
   transform: scaleX(-1);
@@ -140,13 +139,8 @@
   right: -60%;
   z-index: -1;
 }
-@media (max-width: 768px) {
-  .workshops-container {
-    grid-template-columns: 1fr;
-  }
-}
 
-@media (max-width: 1024px) and (min-width: 600px) {
+@media (max-width: 1024px) and (min-width: 820px) {
   .section3-profile-img{
     left: 53%;
   }
@@ -156,6 +150,7 @@
   .section3-layer{
     width:217.28px;
     height: 76.6px;
+   
     
   }
   .workshop-card{
@@ -171,9 +166,12 @@
     font-size: 17px;
     line-height: 20px;
   }
+  .section3-gradient1,.section3-small-circle,.section3-gradient1,.section3-large-circle,.section3-gradient2,.section3-large-circle-2,.section3-gradient3{
+    display: none;
+  }
 }
 
-@media (max-width: 1023px) and (min-width: 600px) {
+@media (max-width: 1023px) and (min-width: 820px) {
   .section3-grid{
     grid-template-columns: 1fr;
   }
@@ -184,7 +182,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
   .section3-grid {
     grid-template-columns: 1fr;
     gap: 0px; 
@@ -206,12 +204,12 @@
   .section3-layer{
     width: 88px;
     height: 31px;
-   
+   top:-1rem
     
   }
   .workshop-card{
-    width: 70%;
-    height: 300px;
+    width: 80%;
+    height: 225px;
     margin:10px auto;
     gap: 25px;
   }
@@ -229,9 +227,16 @@
   }
   .Section3-button{
     margin-top: 0px;
+    margin-bottom: 2.5rem;
   }
   .sec-3-btn{
     padding: 15px 25px;
+  }
+  .workshops-container {
+    grid-template-columns: 1fr;
+  }
+  .section3-gradient1,.section3-small-circle,.section3-gradient1,.section3-large-circle,.section3-gradient2,.section3-large-circle-2,.section3-gradient3{
+    display: none;
   }
 }
 

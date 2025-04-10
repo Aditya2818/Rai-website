@@ -97,6 +97,10 @@ select:invalid {
   color: gray;
 }
 
+input:focus::placeholder {
+  color: transparent;
+}
+
 @media (max-width: 1024px) and (min-width: 600px) {
   .section6-img{
     display: none;

@@ -117,3 +117,12 @@
     margin-top: 10rem;
   }
 }
+
+@media(max-width:820px){
+  .comma-open, .comma-close{
+    font-size: 96px;
+  }
+  .section5{
+    
+  }
+}

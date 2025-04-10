@@ -39,7 +39,7 @@ const Section4 = forwardRef(({ onNavigate }, ref) => {
 
           </div>
           <div className="section4-btn">
-          <Button behaviour={onNavigate.toSection6} variant="gradient" text={"Book a Free Coaching Session"}/>
+          <Button behaviour={onNavigate.toSection6} variant="gradient" text={"Book a Free Coaching Session"} className="section4-button"/>
           </div>
         </div>
       </div>

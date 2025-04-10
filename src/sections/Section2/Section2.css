@@ -95,6 +95,9 @@
 
 
 @media (max-width: 1024px) and (min-width: 600px) {
+  .section2-white-bubble,.white-gradient{
+    display: none;
+  }
   .section2-heading{
     font-size: 70px;
   }
@@ -119,14 +122,17 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
+  .section2-white-bubble,.white-gradient{
+    display: none;
+  }
   .section2-heading{
     font-size:40px;
   }
   .section2-signal{
     width:145.88px;
     height: 51.43px;
-    top: 0.7rem;
+    top: -0.7rem;
   }
   .section2-sub-heading{
     font-size: 20px;

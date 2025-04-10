@@ -2,8 +2,7 @@
 
 body {
     background-image: url("background.png");
-    background-size: 'cover';
-  background-repeat: 'no-repeat';
+  background-repeat:repeat;
     margin: 0;
     font-family: 'Livvic';
   }
