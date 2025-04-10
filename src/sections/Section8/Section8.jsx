@@ -19,10 +19,15 @@ const Section8 = ({onNavigate}) => {
         <div className="section8-right">
         <p className='follow-link'>FOLLOW LINKS</p>
             <div className="icons">
-                <img src='./facebook.png'/>
-                <img src='./instagram-icon.png'/>
-                <img src='./whatsapp.png'/>
-                <img src='./youtube.png'/>
+                <div className="icon">
+                <img src='Fb.png'/>
+                </div>
+                <div className="icon"> <img src='Ig.png'/></div>
+                <div className="icon"><img src='Wp.png'/></div>
+                <div className="icon"><img src='YT.png'/></div>
+               
+                
+                
             </div>
         </div>
     </div>

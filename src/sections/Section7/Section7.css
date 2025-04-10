@@ -18,16 +18,16 @@ padding-bottom: 3rem;
 }
 .section7-gradient-circle-1{
   position: absolute;
-  top:-50%;
+  top:-60%;
   left: -65%;
-  z-index: -1;
+  z-index: -2;
  
 }
 .section7-gradient-circle-2{
   position: absolute;
-  top:-50%;
+  top:-60%;
   right: -65%;
-  z-index: -1;
+  z-index: -2;
 }
 .section7-heading{
   position: relative;

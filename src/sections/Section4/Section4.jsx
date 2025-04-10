@@ -5,9 +5,9 @@ import Button from "../../components/Button/Button";
 const Section4 = forwardRef(({ onNavigate }, ref) => {
   return (
     <div ref={ref} className="section4">
-      <img className='section2-white-bubble' src="./white_small_circle.png"/>
-      <img className='section2-white-bubble2' src="./white_large_circle.png"/>
-      <img className='section2-white-bubble3' src="./white_large_circle.png"/>
+      <img className='section4-white-bubble' src="./white_small_circle.png"/>
+      <img className='section4-white-bubble2' src="./white_large_circle.png"/>
+      <img className='section4-white-bubble3' src="./white_large_circle.png"/>
       <div className="sub-section4">
         <img className="sub-section4-img" src="./additional professional photo.png" />
         <div className="section4-right-content">
