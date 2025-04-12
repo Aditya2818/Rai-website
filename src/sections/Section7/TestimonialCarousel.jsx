@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Carousel.css";
+import { useSwipeable } from "react-swipeable";
 import testimonials from "./Testimonials";
 
 const TestimonialCarousel = () => {
@@ -22,8 +23,15 @@ const TestimonialCarousel = () => {
     );
   };
 
+  const swipeHandlers = useSwipeable({
+    onSwipedLeft: goToNext,
+    onSwipedRight: goToPrev,
+    preventDefaultTouchmoveEvent: true,
+    trackMouse: true,
+  });
+
   return (
-    <div className="testimonial-carousel-container">
+    <div className="testimonial-carousel-container" {...swipeHandlers}>
       <div className="testimonial-carousel">
         {testimonials.map((testimonial, index) => (
           <div key={index} className={getCardClass(index)}>

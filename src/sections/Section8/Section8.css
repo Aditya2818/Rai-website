@@ -63,3 +63,36 @@
     align-items: center;
     justify-content: center;
 }
+
+@media(max-width:820px){
+    .section8{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 1rem;
+        align-self: left;
+        padding: 2rem;
+    }
+    .section8-left p{
+        display: none;
+    }
+    .quick-link, .follow-link{
+        display: none;
+    }
+    .final-logo{
+        width: 209px;
+        height: 83px;
+        margin-left: -1px;
+    }
+    .links p{
+       text-align: left;
+       color: #4B4B4B;
+       font-size: 15px;
+    }
+    .section8-right{
+        margin-top: 0px;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}

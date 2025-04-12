@@ -9,6 +9,8 @@ const Section1 = ({ onNavigate }) => {
       <img className="section1-small-circle" src="dark_small_circle.png"/>
       <img className="section1-gradient-circle" src="light_green_gradient.png"/>
       <img className="section1-large-circle" src="dark_large_circle.png"/>
+      <img className="section1-large-circle2" src="dark_large_circle.png"/>
+
       <img className="section1-gradient-large-circle" src="light_green_gradient.png"/>
       <img className="section1-small-circle-2" src="dark_small_circle.png"/>
       <img className="section1-gradient-circle-2" src="light_green_gradient.png"/>

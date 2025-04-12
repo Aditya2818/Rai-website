@@ -2,7 +2,10 @@
 
 body {
   background-image: url("/background.png");
-  background-repeat: repeat;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   margin: 0;
   font-family: "Livvic";
 }
