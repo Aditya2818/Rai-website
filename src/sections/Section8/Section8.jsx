@@ -2,20 +2,21 @@ import React from "react";
 import "./Section8.css";
 
 const Section8 = ({ onNavigate }) => {
+  // const [email, setemail] = useState("");
 
-//     const [formData, setFormData] = useState(
-//         email: "",
-//       });
-    
-    
-//   const handleChange = (e) => {
-//     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  // const handleChange = (e) => {
+  //   setemail((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  // };
+
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   console.log("Form Data:", email);
+  // };
+
+//   const handleClick =(link)=>{
+//     window.open(link,'_blank','noopener,noreferrer')};
 //   };
 
-//   const handleSubmit = (e) => {
-//     e.preventDefault();
-//     console.log("Form Data:", formData);
-//   };
   return (
     <div className="section8">
       <div className="section8-left">
@@ -26,19 +27,18 @@ const Section8 = ({ onNavigate }) => {
           successful and sustainable career in dance.
         </p>
       </div>
-      <div className="section8-form">
-      <div className="input-group">
-              <label>Email id</label>
-              <input
-                type="email"
-                name="email"
-                placeholder="Enter your email id"
-                // onChange={handleChange}
-                required
-              />
-            </div>
-
-      </div>
+      {/* <div className="section8-form">
+        <div className="input-group">
+          <label>Email id</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email id"
+            // onChange={handleChange}
+            required
+          />
+        </div>
+      </div> */}
       <div className="section8-center">
         <p className="quick-link">QUICK LINKS</p>
         <div className="links">
@@ -48,8 +48,11 @@ const Section8 = ({ onNavigate }) => {
         </div>
       </div>
       <div className="section8-right">
-        <p className="follow-link">FOLLOW LINKS</p>
+        <p className="follow-link">FOLLOW US</p>
         <div className="icons">
+        <div className="icon">
+            <img src="Fb.png" />
+          </div>
           <div className="icon">
             {" "}
             <img src="Ig.png" />

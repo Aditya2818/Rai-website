@@ -1,35 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 
-
 .section7 {
-    position: relative;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-padding-top: 3rem;
-padding-bottom: 3rem;
-  width:100%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  width: 100%;
   overflow: hidden;
   z-index: 1;
-  
 }
-.section7-gradient-circle-1{
+.section7-gradient-circle-1 {
   position: absolute;
-  top:-60%;
+  top: -60%;
   left: -65%;
   z-index: -2;
- 
 }
-.section7-gradient-circle-2{
+.section7-gradient-circle-2 {
   position: absolute;
-  top:-60%;
+  top: -60%;
   right: -65%;
   z-index: -2;
 }
-.section7-heading{
+.section7-heading {
   position: relative;
   width: auto;
 }
@@ -60,34 +57,32 @@ padding-bottom: 3rem;
   letter-spacing: 3px;
 }
 
-
-.section7-signal{
+.section7-signal {
   position: absolute;
   width: 167px;
   height: 59px;
   top: 2.8rem;
-  left:0;
+  left: 0;
   transform: scaleX(-1);
   z-index: -1;
 }
 
-
-@media(max-width:820px){
-  .section7{
+@media (max-width: 820px) {
+  .section7 {
     padding-top: 12px;
   }
-  .section7-gradient-circle-1,.section7-gradient-circle-2{
+  .section7-gradient-circle-1,
+  .section7-gradient-circle-2 {
     display: none;
   }
-  .section7-heading1{
+  .section7-heading1 {
     font-size: 32px;
     line-height: 100px;
   }
-  .section7-heading2{
+  .section7-heading2 {
     font-size: 60px;
-    
   }
-  .section7-heading2-text2{
+  .section7-heading2-text2 {
     text-shadow: none;
   }
   .section7-signal {

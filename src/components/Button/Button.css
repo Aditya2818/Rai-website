@@ -67,7 +67,7 @@
   }
 }
 
-@media (max-width: 1023px) and (min-width: 600px) {
+/* @media (max-width: 1023px) and (min-width: 600px) {
   .btn {
     padding: 12px 25px;
     max-width: 250px; 
@@ -75,9 +75,9 @@
   .section1-small-circle-2{
     display: none;
   }
-}
+} */
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
   .btn{
     font-size: 20px;
     line-height: 24px;

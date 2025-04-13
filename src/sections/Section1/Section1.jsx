@@ -4,6 +4,8 @@ import Nav from "./Nav/Nav";
 import Button from "../../components/Button/Button";
 
 const Section1 = ({ onNavigate }) => {
+  const handleClick = () => {
+    window.open('https://calendly.com/raiartsinitiative/30min','_blank','noopener,noreferrer')};
   return (
     <div className="section1">
       <img className="section1-small-circle" src="dark_small_circle.png"/>
@@ -25,7 +27,7 @@ const Section1 = ({ onNavigate }) => {
           </span>{" "}
           <br />
           <span style={{ color: "#F9EEB4" }}>
-            business knowledge, entrepreneurial skills
+            business knowledge<span style={{ color: "white" }}>,</span> entrepreneurial skills
           </span>
           , &<span style={{ color: "#F9EEB4" }} className="confidence"> confidence</span><span className="fstop">.</span>
         </div>
@@ -42,8 +44,8 @@ const Section1 = ({ onNavigate }) => {
   </span>
         </div>
         <div className="section1-div1-buttons">
-          <Button behaviour={onNavigate.toSection3} variant="white" text="Explore Our Workshops" />
-          <Button behaviour={onNavigate.toSection6} variant="gradient" text="Book A Free Coaching Session" />
+          <Button behaviour={onNavigate.toSection3} variant="white"  text="Explore Our Workshops" />
+          <Button behaviour={handleClick} variant="gradient"  text="Book A Free Coaching Session" />
         </div>
       </div>
       <div className="section1-div2">

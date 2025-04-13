@@ -226,7 +226,7 @@
 }
 
 /* Tablet breakpoint: 600px - 1024px */
-@media (max-width: 1024px) and (min-width: 600px) {
+@media (max-width: 1024px) and (min-width: 820px) {
   .section1-div1-first {
     font-size: 23px;  
   }
@@ -280,12 +280,12 @@
 }
 }
 
-@media (max-width: 1023px) and (min-width: 600px) {
+/* @media (max-width: 1023px) and (min-width: 600px) {
   .section1-div1-h1 {
-    /* margin-top: 5rem; */
+    margin-top: 5rem;
   }
   .section1-div1-h2-tablet-only {
     margin-top: 2rem; 
   }
   
-}
+} */

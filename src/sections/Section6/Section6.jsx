@@ -8,6 +8,7 @@ const Section6 = forwardRef((props,ref) => {
     city: "",
     phone: "",
     workshop: "",
+    notes:"",
   });
 
   const handleChange = (e) => {
@@ -70,7 +71,7 @@ const Section6 = forwardRef((props,ref) => {
             </div>
           </div>
           <div className="input-group full-width">
-            <label>Interested in:</label>
+            <label>Select an option</label>
             <select name="workshop" onChange={handleChange} required defaultValue="">
                
               <option value="" disabled>Workshop Interested in</option>
@@ -80,12 +81,14 @@ const Section6 = forwardRef((props,ref) => {
               Dance Contract Essentials: From Clause to Confidence
               </option>
               <option value="Fundraising and Grant Writing for Dancers">Fundraising and Grant Writing for Dancers</option>
+              <option value="Resume/letter">Resume/Cover Letter Guidance</option>
+              <option value="somethin-else">Something else</option>
             </select>
           </div>
 
           <div className="input-group full-width">
-            <label>Summary</label>
-            <textarea id="summary" name="summary" rows="3" ></textarea>
+            <label>Notes</label>
+            <textarea id="summary" name="summary" rows="3" onChange={handleChange} ></textarea>
           </div>
     
           <button type="submit" className="submit-button">

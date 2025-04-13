@@ -3,6 +3,7 @@ import "./Modal.css";
 import React from "react";
 
 const Modal = ({ modalRef }) => {
+ 
   return (
     <div className="Modal" ref={modalRef}>
             
