@@ -8,6 +8,7 @@
   align-items: center;
   width: 100%;
   overflow: hidden;
+  background-image: url("/background.png");
   
 }
 .section3-top-img {
