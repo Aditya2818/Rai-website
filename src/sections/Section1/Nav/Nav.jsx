@@ -1,18 +1,81 @@
-import React from 'react'
-import "./Nav.css"
+import React, { useState } from "react";
+import "./Nav.css";
+import Button from "../../../components/Button/Button";
 
-const Nav = ({functionality}) => {
+const Nav = ({ functionality }) => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const handleNavClick = (sectionFunction) => {
+    sectionFunction();
+    setIsMenuOpen(false);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  }
+
+  const link =
+    "https://www.instagram.com/raiartsinitiative?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==";
+  const handleClick = () => {
+    window.open(link, "_blank", "noopener,noreferrer");
+  };
   return (
-    <div className='section1-nav'>
+    <>
+      <div className="section1-nav">
         <div className="section1-nav-left">
-            <p onClick={functionality.toSection4}>About RAI</p>
-            <p onClick={functionality.toSection3}>Our Workshops</p>
-            <p onClick={functionality.toSection6}>Contact us</p>
+          <p onClick={functionality.toSection4}>About RAI</p>
+          <p onClick={functionality.toSection3}>Our Workshops</p>
+          <p onClick={functionality.toSection6}>Contact us</p>
         </div>
-        <img className="section1-nav-middle" src='./logo.png'/>
-        <img className="section1-nav-right" src='./instagram.png'/>
-    </div>
-  )
-}
+        <img className="section1-nav-middle" src="./logo.png" />
+        <img
+          className="section1-nav-right"
+          src="./instagram.png"
+          onClick={() => handleClick()}
+        />
+      </div>
 
-export default Nav
+      {/* Mobile */}
+      <div className="section1-nav-mobile">
+        <div className="section1-nav-mobile-logo">
+          <img className="section1-nav-mobile-logo-img" src="/logo.png" />
+        </div>
+        <div className="section1-nav-mobile-button">
+          <Button className="book-button" variant="gradient" text="Login" />
+          <div className="hamburger" onClick={toggleMenu}>
+            <img className="hamburger-img" src="/Menu Burger Horizontal.png" />
+          </div>
+        </div>
+      </div>
+      {isMenuOpen && (
+        <div className="hamburger-menu">
+          <div className="hamburger-menu-top">
+            <img className="hamburger-menu-top-logo" src="/logo.png" />
+            <img
+              className="hamburger-menu-top-close"
+              src="/close.png"
+              onClick={closeMenu}
+            />
+          </div>
+          <div className={`mobile-menu`}>
+            <div onClick={() => handleNavClick(functionality.toSection4)}>
+              <span>About RAI</span>
+            </div>
+            <div onClick={() => handleNavClick(functionality.toSection3)}>
+              <span>Our Workshops</span>
+            </div>
+            <div onClick={() => handleNavClick(functionality.toSection6)}>
+              <span>Contact us</span>
+            </div>
+          </div>
+        </div>
+      )}
+    </>
+  );
+};
+
+export default Nav;

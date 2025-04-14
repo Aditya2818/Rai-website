@@ -13,9 +13,9 @@ const Section8 = ({ onNavigate }) => {
   //   console.log("Form Data:", email);
   // };
 
-//   const handleClick =(link)=>{
-//     window.open(link,'_blank','noopener,noreferrer')};
-//   };
+  const handleClick = (link) => {
+    window.open(link, "_blank", "noopener,noreferrer");
+  };
 
   return (
     <div className="section8">
@@ -50,17 +50,17 @@ const Section8 = ({ onNavigate }) => {
       <div className="section8-right">
         <p className="follow-link">FOLLOW US</p>
         <div className="icons">
-        <div className="icon">
+          <div className="icon" onClick={handleClick()}>
             <img src="Fb.png" />
           </div>
-          <div className="icon">
+          <div className="icon" onClick={()=>{handleClick("//www.instagram.com/raiartsinitiative?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==")}}>
             {" "}
             <img src="Ig.png" />
           </div>
           <div className="icon">
             <img src="Wp.png" />
           </div>
-          <div className="icon">
+          <div className="icon" onClick={()=>{handleClick('https://youtube.com/@raiartsinitative?si=6nqIpZti3sWcmeEq')}}>
             <img src="YT.png" />
           </div>
         </div>

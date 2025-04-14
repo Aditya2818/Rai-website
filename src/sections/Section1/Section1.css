@@ -224,9 +224,12 @@
   height: 460px;
   top: 25rem;
 }
+.section1-div1-h2-mobile-only {
+  display: none;
+}
 
-/* Tablet breakpoint: 600px - 1024px */
-@media (max-width: 1024px) and (min-width: 820px) {
+
+@media (max-width: 1024px) and (min-width: 821px) {
   .section1-div1-first {
     font-size: 23px;  
   }
@@ -280,12 +283,112 @@
 }
 }
 
-/* @media (max-width: 1023px) and (min-width: 600px) {
-  .section1-div1-h1 {
-    margin-top: 5rem;
+@media(max-width:820px){
+  .section1-image1{
+    display: none;
   }
-  .section1-div1-h2-tablet-only {
-    margin-top: 2rem; 
+  .section1-gradient-circle-2{
+    display: none;
   }
-  
-} */
+  .section1-gradient-circle{
+    display: none;
+  }
+  .section1-large-circle2{
+    display: none;
+  }
+  .section1-div1-first{
+    font-size: 15px;
+    line-height:19px;
+  }
+  .section1-div1-h1{
+    font-size: 36px;
+  }
+  .section1-div1-button1{
+    display: none;
+  }
+  .section1-large-circle{
+    display: none;
+  }
+  .section1-div1{
+    margin-top: 1rem;
+    padding: 0px 8px;
+  }
+  .section1-div1-second{
+    margin-top: 2.5rem;
+  }
+  .section1-div1-h2-desktop-only{
+    display: none;
+  }
+
+  .section1-div1-h2-mobile-only{
+    display: block;
+    padding: 12px 25px;
+    
+  }
+  .section1-div1-h2-mobile-only *{
+    display: block;
+    font-family: "Anton";
+  color: #fcfffe;
+  margin: 0px;
+  font-size:64px;
+  line-height: 70px;
+  background: linear-gradient(90deg, #FFE14C 0%, #FFFFFF 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+  .section1-small-circle{
+    top:12%;
+    right: -20%;
+    opacity: 60%;
+  }
+  .section1-div1-button2{
+    padding: 12px 25px !important;
+    width: 275px !important;
+    height: 68px !important;
+  }
+  .section1-small-circle-2{
+    top: 32%;
+    opacity: 60%;
+    left: -8%;
+    width: 88px;
+  }
+  .section1-div2{
+    margin-top: 3rem;
+  }
+  .main-title {
+    font-size: 40px;
+  }
+  .sub-item{
+    font-size: 16px;
+    line-height: 15px;
+  }
+  .artistery-layer,.business-layer{
+    width: 73px;
+  }
+  .performer-image{
+    width: 296.81px;
+    height: 449.67px;
+    left: 20px;
+  }
+  .connecting-arrow{
+    height: 380px;
+    top: 10rem;
+  }
+  .artistry-section{
+    left: 0;
+    top: -0.8rem;
+  }
+  .business-section{
+    left: 65%;
+    bottom: 5%;
+   
+  }
+  .sub-item-holder-business{
+    margin-top: -8px;
+    margin-left:12%;
+  }
+  .sub-item-holder{
+    margin-left: 4px;
+  }
+ 
+}
