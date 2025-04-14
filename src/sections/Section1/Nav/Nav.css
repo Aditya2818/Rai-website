@@ -8,8 +8,13 @@
   border-radius: 30px;
   margin: 20px auto 0px auto;
   padding: 0px 2rem;
-  
+  /* position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.3s ease-in-out; */
 }
+
 .section1-nav-mobile {
   display: none;
 }
@@ -34,8 +39,8 @@
   object-fit: cover;
 }
 .section1-nav-mobile-logo-img {
-  width: 60%;
-  height: 52px;
+    width:60%;
+    height:auto;
   margin-top: 2px;
 }
 .section1-nav-mobile-button {
@@ -61,6 +66,7 @@
 .hamburger-menu-top-logo {
   width: 50%;
   height: auto;
+  margin-left: 4%;
 }
 .hamburger-menu-top-close {
   width: auto;
@@ -78,7 +84,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 
 .mobile-menu > * {

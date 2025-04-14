@@ -23,21 +23,21 @@ const testimonials = [
     {
         name: "Carson Simpson",
         title: "Dancer and Master’s Student at Columbia University ",
-        image: "/Carson.jpeg",
+        image: "/Carson.jpg",
         quote:
             "Very easy to talk to, I felt heard and supported throughout our conversation. I highly recommend bringing Kira in to discuss with dance majors students.",
     },
     {
         name: "Danielle Hoffman ",
         title: "Dancer",
-        image: "/Client2.png",
+        image: "/Blank user.jpg",
         quote:
             "Thank you for this - I wish someone told me about this when I was younger.",
     },
     {
         name: "Bria",
         title: "Dancer",
-        image: "/Client3.png",
+        image: "/Blank user.jpg",
         quote:
             "This is so good—even beyond the dance community. Great advice in general!",
     },

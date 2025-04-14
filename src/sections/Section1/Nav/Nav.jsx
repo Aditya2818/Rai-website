@@ -1,9 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Nav.css";
 import Button from "../../../components/Button/Button";
 
 const Nav = ({ functionality }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsSticky(window.scrollY > 100);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -36,7 +46,12 @@ const Nav = ({ functionality }) => {
           <p onClick={functionality.toSection6}>Contact us</p>
         </div>
 
-        <Button className="book-button" variant="gradient" text={"Let's Talk"} behaviour={handleClick}/>
+        <Button
+          className="book-button"
+          variant="gradient"
+          text={"Let's Talk"}
+          behaviour={handleClick}
+        />
       </div>
 
       {/* Mobile */}
