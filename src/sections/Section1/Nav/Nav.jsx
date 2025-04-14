@@ -16,27 +16,27 @@ const Nav = ({ functionality }) => {
 
   const closeMenu = () => {
     setIsMenuOpen(false);
-  }
-
-  const link =
-    "https://www.instagram.com/raiartsinitiative?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==";
-  const handleClick = () => {
-    window.open(link, "_blank", "noopener,noreferrer");
   };
+
+  const handleClick = () => {
+    window.open(
+      "https://calendly.com/raiartsinitiative/30min",
+      "_blank",
+      "noopener,noreferrer"
+    );
+  };
+
   return (
     <>
       <div className="section1-nav">
+        <img className="section1-nav-middle" src="./logo.png" />
         <div className="section1-nav-left">
           <p onClick={functionality.toSection4}>About RAI</p>
           <p onClick={functionality.toSection3}>Our Workshops</p>
           <p onClick={functionality.toSection6}>Contact us</p>
         </div>
-        <img className="section1-nav-middle" src="./logo.png" />
-        <img
-          className="section1-nav-right"
-          src="./instagram.png"
-          onClick={() => handleClick()}
-        />
+
+        <Button className="book-button" variant="gradient" text={"Let's Talk"} behaviour={handleClick}/>
       </div>
 
       {/* Mobile */}
@@ -45,7 +45,12 @@ const Nav = ({ functionality }) => {
           <img className="section1-nav-mobile-logo-img" src="/logo.png" />
         </div>
         <div className="section1-nav-mobile-button">
-          <Button className="book-button" variant="gradient" text="Login" />
+          <Button
+            className="book-button"
+            variant="gradient"
+            text="Let's talk"
+            behaviour={handleClick}
+          />
           <div className="hamburger" onClick={toggleMenu}>
             <img className="hamburger-img" src="/Menu Burger Horizontal.png" />
           </div>

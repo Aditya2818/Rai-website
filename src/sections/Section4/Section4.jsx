@@ -3,6 +3,13 @@ import "./Section4.css";
 import Button from "../../components/Button/Button";
 
 const Section4 = forwardRef(({ onNavigate }, ref) => {
+  const handleclick = () => {
+    window.open(
+      "https://calendly.com/raiartsinitiative/30min",
+      "_blank",
+      "noopener,noreferrer"
+    );
+  };
   return (
     <div ref={ref} className="section4">
       <img className='section4-white-bubble' src="./white_small_circle.png"/>
@@ -39,7 +46,7 @@ const Section4 = forwardRef(({ onNavigate }, ref) => {
 
           </div>
           <div className="section4-btn">
-          <Button behaviour={onNavigate.toSection6} variant="gradient" text={"Book a Free Coaching Session"} className="section4-button"/>
+          <Button behaviour={handleclick} variant="gradient" text={"Book a Free Coaching Session"} className="section4-button" />
           </div>
         </div>
       </div>

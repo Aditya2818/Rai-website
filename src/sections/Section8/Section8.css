@@ -49,6 +49,9 @@
     display: flex;
     gap: 13px;
 }
+.icon:hover{
+    opacity: 0.3;
+}
 
 .links p, .icons img{
     cursor: pointer;
