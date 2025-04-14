@@ -13,7 +13,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 25px;
 }
 
 .section6-form {
@@ -99,6 +99,9 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance:none;
+}
+.section6-img{
+  height: 800px;
 }
 
 @media (max-width: 1024px) and (min-width: 600px) {

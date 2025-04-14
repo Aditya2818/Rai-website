@@ -140,6 +140,10 @@
   position: relative;
 }
 
+.section1-div2{
+  background-image: url("/text-bg.png");
+}
+
 .performer-image {
   position: absolute;
   top: 0px;
@@ -154,6 +158,7 @@
   top: 14%;
   right: 16.5%;
   z-index: -1;
+ 
 }
 .section1-gradient-circle{
  
@@ -184,6 +189,7 @@
   bottom:15%;
   left: 22%;
   z-index: -2;
+  opacity: 0.70;
 }
 
 .section1-gradient-circle-2{
@@ -223,6 +229,7 @@
   width: 460px;
   height: 460px;
   top: 25rem;
+  opacity: 70%;
 }
 .section1-div1-h2-mobile-only {
   display: none;
@@ -254,6 +261,7 @@
     top: 20%;
     left: 75%;
     z-index: -1;
+    opacity: 0.63;
   }
   .section1-gradient-circle{
     top: -7%;

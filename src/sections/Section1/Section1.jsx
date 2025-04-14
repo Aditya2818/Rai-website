@@ -112,7 +112,7 @@ const Section1 = ({ onNavigate }) => {
         <img
           src="./Arrow_second_section.png"
           alt="Connecting arrow"
-          className=""connecting-arrow
+          className="connecting-arrow"
         />
 
         {/* Performer image */}

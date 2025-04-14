@@ -7,7 +7,6 @@ const Section2 = ({onNavigate}) => {
   return (
     <div className='section2'>
       <img className='section2-white-bubble' src="./white_small_circle.png"/>
-      <img src='./yellow-gradient.png' className='white-gradient'/>
         <div className="section2-top-div">
         
             <div className="section2-heading">
