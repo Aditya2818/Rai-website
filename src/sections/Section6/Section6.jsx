@@ -139,9 +139,9 @@ const Section6 = forwardRef((props, ref) => {
             ></textarea>
           </div>
 
-          <button type="submit" className="submit-button">
+          {!submitted && <button type="submit" className="submit-button">
             Submit
-          </button>
+          </button>}
         </form>
       </div>
     </div>
