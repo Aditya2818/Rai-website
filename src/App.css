@@ -5,3 +5,52 @@ body {
   margin: 0;
   font-family: "Livvic";
 }
+
+@keyframes float {
+  0% {
+    transform: translateY(1rem);
+   
+  }
+  50% {
+    transform: translateY(-1rem);
+   
+  }
+  100% {
+    transform: translateY(1rem);
+    
+  }
+}
+
+.section1-small-circle{
+  animation: float 6s ease-in infinite;
+}
+.section1-small-circle-2{
+  animation: float 5.8s ease-in infinite;
+}
+.section1-large-circle{
+  animation: float 5.5s linear infinite;
+}
+.section1-large-circle2{
+  animation: float 5s ease-in infinite;
+}
+.section2-white-bubble{
+  animation: float 5s ease-in infinite;
+}
+.section3-small-circle{
+  animation: float 5s ease-in infinite;
+}
+.section3-large-circle{
+  animation: float 6s ease-in infinite;
+}
+.section3-large-circle-2{
+  animation: float 6s ease-in infinite;
+}
+.section4-white-bubble{
+  animation: float 5s ease-in infinite;
+}
+.section4-white-bubble2{
+  animation: float 6s ease-in infinite;
+}
+.section4-white-bubble3{
+  animation: float 5s ease-in infinite;
+}

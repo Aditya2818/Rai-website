@@ -104,7 +104,7 @@
 
 
 
-@media (max-width: 1024px) and (min-width: 820px) {
+@media (min-width: 821px) and (max-width: 1024px) {
   .comma-open{
     left: -9rem;
   }

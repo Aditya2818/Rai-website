@@ -112,11 +112,16 @@
   line-height: 0px !important;
 }
 
-@media (max-width: 1024px) and (min-width: 820px) {
+@media (max-width: 1024px) and (min-width: 821px) {
   .section1-nav {
     width: 90%;
     height: 6.1875rem;
-    padding: 0px 16px;
+    
+  }
+  .section1-nav-left{
+    font-size: 18px;
+    width: 50%;
+   
   }
 }
 

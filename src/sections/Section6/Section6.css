@@ -103,8 +103,11 @@ select {
 .section6-img{
   height: 800px;
 }
-
-@media (max-width: 1024px) and (min-width: 600px) {
+.btn.gradient {
+  position: relative;
+  z-index: 0;
+}
+@media (min-width: 821px) and (max-width: 1024px) {
   .section6-img {
     display: none;
   }

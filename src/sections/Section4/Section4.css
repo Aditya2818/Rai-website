@@ -103,7 +103,7 @@ top: 3rem;
 
 
 
-@media (max-width: 1024px) and (min-width: 600px) {
+@media (min-width: 821px) and (max-width: 1024px){
   .sub-section4{
     flex-direction: column;
     justify-content: center;
@@ -127,6 +127,7 @@ top: 3rem;
   .section4-signal{
     width: 181.82px;
     height: 74.21px;
+    left: 30%;
   }
   .section4-white-bubble,.section4-white-bubble2,.section4-white-bubble3{
     display: none;

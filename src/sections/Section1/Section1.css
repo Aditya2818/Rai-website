@@ -236,7 +236,10 @@
 }
 
 
-@media (max-width: 1024px) and (min-width: 821px) {
+
+
+
+@media (min-width: 821px) and (max-width: 1024px) {
   .section1-div1-first {
     font-size: 23px;  
   }
@@ -254,7 +257,7 @@
     visibility: hidden;
   }
   .section1-image1 {
-    top:12%;
+    top:9%;
   }
   .section1-large-circle{
     position: absolute;
@@ -267,7 +270,7 @@
     top: -7%;
   }
   .section1-div1-second {
-    margin-top: 0px;
+    margin-top: 2.5rem;
   }
 .section1-div1-h1{
   font-size: 60px;
@@ -287,6 +290,9 @@
   display: none;
 }
 .section1-small-circle{
+  display: none;
+}
+.section1-large-circle2 {
   display: none;
 }
 }

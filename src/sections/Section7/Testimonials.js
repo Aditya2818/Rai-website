@@ -30,14 +30,14 @@ const testimonials = [
     {
         name: "Danielle Hoffman ",
         title: "Dancer",
-        image: "/Blank user.jpg",
+        image: "/Blank user.png",
         quote:
             "Thank you for this - I wish someone told me about this when I was younger.",
     },
     {
         name: "Bria",
         title: "Dancer",
-        image: "/Blank user.jpg",
+        image: "/Blank user.png",
         quote:
             "This is so good—even beyond the dance community. Great advice in general!",
     },
