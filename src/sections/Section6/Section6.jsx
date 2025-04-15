@@ -14,6 +14,7 @@ const Section6 = forwardRef((props, ref) => {
   });
 
   const [submitted,setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e) => {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
@@ -21,6 +22,7 @@ const Section6 = forwardRef((props, ref) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
     const url = "https://script.google.com/macros/s/AKfycbwybRCrIuk9Qd1jiyJfyx0ZtKHQ9U8Af2RQxyQ64b9yrt6V5Z_AZxpd53vxTO2yeZQT9A/exec";
     
     fetch(url, {
@@ -40,10 +42,15 @@ const Section6 = forwardRef((props, ref) => {
     .then((res) => res.text())
     .then(() => {
       setSubmitted(true);
+      setTimeout(() => {
+        setSubmitted(false); 
+        setIsSubmitting(false);
+      }, 5000);
     })
     .catch((error) => {
       console.error("Error:", error);
       alert("Failed to submit.");
+        setIsSubmitting(false);
     });
   };
   
@@ -53,7 +60,7 @@ const Section6 = forwardRef((props, ref) => {
       <div className="section6-content">
         <img className="section6-img" src="./Photo.png" />
         <form className="section6-form" onSubmit={handleSubmit}>
-          {submitted?<ResponseCard/>:<></>}
+        {submitted && <ResponseCard />}
           <span className="form-heading">
             Share your info and we’ll reach out!
           </span>
@@ -139,9 +146,9 @@ const Section6 = forwardRef((props, ref) => {
             ></textarea>
           </div>
 
-          {!submitted && <button type="submit" className="submit-button">
-            Submit
-          </button>}
+          <button type="submit" className="submit-button" disabled={isSubmitting}>
+            {isSubmitting ? "Submitting..." : "Submit"}
+          </button>
         </form>
       </div>
     </div>
