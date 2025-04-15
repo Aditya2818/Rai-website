@@ -1,6 +1,7 @@
 import React, { useState, forwardRef } from "react";
 import "./Section6.css";
 import ResponseCard from "../../components/Response/Response";
+import { form } from "framer-motion/client";
 
 const Section6 = forwardRef((props, ref) => {
   const [formData, setFormData] = useState({
@@ -16,9 +17,18 @@ const Section6 = forwardRef((props, ref) => {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
+  // https://script.google.com/macros/s/AKfycby_erF26rqwOgTrhYHgsWsERd0Gb7U22rNPizY7nhCEZHAhdqgU8L-hlsYxzzbpu3iKDg/exec
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form Data:", formData);
+    const url = "https://script.google.com/macros/s/AKfycby_erF26rqwOgTrhYHgsWsERd0Gb7U22rNPizY7nhCEZHAhdqgU8L-hlsYxzzbpu3iKDg/exec"
+    fetch(url,{
+      method:"POST",
+      mmode:"cors",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body:(`Name=${formData.name}&Email=${formData.email}&City=${formData.city}&Phone=${formData.phone}&Workshop=${formData.workshop}&Notes=${formData.notes}`)
+    }).then(res=>res.text()).then(data=>{
+      alert(data)
+    }).catch(error=>console.log(error))
   };
 
   return (
@@ -26,7 +36,7 @@ const Section6 = forwardRef((props, ref) => {
       <div className="section6-content">
         <img className="section6-img" src="./Photo.png" />
         <form className="section6-form" onSubmit={handleSubmit}>
-          <ResponseCard />
+          {/* <ResponseCard /> */}
           <span className="form-heading">
             Share your info and we’ll reach out!
           </span>
@@ -105,8 +115,8 @@ const Section6 = forwardRef((props, ref) => {
           <div className="input-group full-width">
             <label>Notes</label>
             <textarea
-              id="summary"
-              name="summary"
+              id="notes"
+              name="notes"
               rows="3"
               onChange={handleChange}
             ></textarea>
