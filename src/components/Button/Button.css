@@ -32,8 +32,8 @@
   padding: 2px;
   background: conic-gradient(
     from var(--angle),
-    transparent 70%,
-  
+    transparent 60%,
+    #F9EEB4,
     #fefdf9
   );
   -webkit-mask: linear-gradient(white, white) content-box,
@@ -49,7 +49,7 @@
   animation: 4s spin linear infinite;
 }
 .btn.gradient::before {
-  filter: blur(1.5rem);
+  filter: blur(2rem);
   opacity: 0.5;
 }
 @keyframes spin {

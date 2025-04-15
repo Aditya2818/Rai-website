@@ -50,14 +50,14 @@ const Section8 = ({ onNavigate }) => {
       <div className="section8-right">
         <p className="follow-link">FOLLOW US</p>
         <div className="icons">
-          <div className="icon" onClick={handleClick}>
+          <div className="icon">
             <img src="Fb.png" />
           </div>
           <div className="icon" onClick={()=>{handleClick("//www.instagram.com/raiartsinitiative?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==")}}>
             {" "}
             <img src="Ig.png" />
           </div>
-          <div className="icon">
+          <div className="icon" onClick={()=>{handleClick('https://api.whatsapp.com/send?phone=18325187747')}}>
             <img src="Wp.png" />
           </div>
           <div className="icon" onClick={()=>{handleClick('https://youtube.com/@raiartsinitative?si=6nqIpZti3sWcmeEq')}}>

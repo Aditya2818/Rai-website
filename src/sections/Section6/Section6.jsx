@@ -1,5 +1,6 @@
 import React, { useState, forwardRef } from "react";
 import "./Section6.css";
+import ResponseCard from "../../components/Response/Response";
 
 const Section6 = forwardRef((props,ref) => {
   const [formData, setFormData] = useState({
@@ -25,6 +26,7 @@ const Section6 = forwardRef((props,ref) => {
       <div className="section6-content">
         <img className="section6-img" src="./Photo.png" />
         <form className="section6-form" onSubmit={handleSubmit}>
+          <ResponseCard/>
           <span className="form-heading">
             Share your info and we’ll reach out!
           </span>

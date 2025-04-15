@@ -39,11 +39,11 @@ const Section3 = forwardRef(({ onNavigate }, ref) => {
         <span className="section3-first-heading">OUR EXCLUSIVE </span>
         <span className="section3-second-heading">WORKSHOPS</span>
       </div>
-      <div className="section3-grid">
+      <div  ref={cardRef} className="section3-grid">
         {workshops.map((workshop, index) => {
           return (
             <motion.div
-              ref={cardRef}
+             
               className="workshop-card"
               custom={index}
               initial="hidden"
