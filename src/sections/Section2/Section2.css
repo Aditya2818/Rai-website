@@ -22,7 +22,7 @@
 .section2-heading {
   font-family: "Anton";
   text-align: center;
-  font-size: 100px;
+  font-size:6.25rem;
   font-weight: 400;
   color: #314529;
   line-height: 100px;
@@ -44,7 +44,7 @@
 
 .section2-sub-heading {
   font-weight: bold;
-  font-size: 38px;
+  font-size: 2.375rem;
   color: #314529;
   text-align: center;
   margin-top: 0.75rem;
@@ -104,7 +104,7 @@
     display: none;
   }
   .section2-heading{
-    font-size: 70px;
+    font-size: 4.375rem;
   }
   .section2-signal{
     width:217.28px;
@@ -112,13 +112,13 @@
     top: -2.8rem;
   }
   .section2-sub-heading{
-    font-size: 31px;
+    font-size: 1.938rem;
   }
   .section2-mid-div{
     row-gap: 5.5rem; 
   }
   .section2-button{
-    font-size: 25px;
+    font-size: 1.563rem;
     padding: 22px 25px;
     max-width: 300px;
   }
@@ -132,7 +132,7 @@
     display: none;
   }
   .section2-heading{
-    font-size:40px;
+    font-size:2.5rem;
   }
   .section2-signal{
     width:145.88px;
@@ -140,7 +140,7 @@
     top: -0.7rem;
   }
   .section2-sub-heading{
-    font-size: 20px;
+    font-size: 1.25rem;
     margin-top: -10px;
   }
   .section2-mid-div{
@@ -148,6 +148,6 @@
     gap: 6rem;
   }
   .section2-button{
-   font-size: 20px;
+   font-size: 1.25rem;
   }
 }

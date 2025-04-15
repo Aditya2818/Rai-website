@@ -2,14 +2,14 @@ import React, { useState, forwardRef } from "react";
 import "./Section6.css";
 import ResponseCard from "../../components/Response/Response";
 
-const Section6 = forwardRef((props,ref) => {
+const Section6 = forwardRef((props, ref) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     city: "",
     phone: "",
     workshop: "",
-    notes:"",
+    notes: "",
   });
 
   const handleChange = (e) => {
@@ -26,7 +26,7 @@ const Section6 = forwardRef((props,ref) => {
       <div className="section6-content">
         <img className="section6-img" src="./Photo.png" />
         <form className="section6-form" onSubmit={handleSubmit}>
-          <ResponseCard/>
+          <ResponseCard />
           <span className="form-heading">
             Share your info and we’ll reach out!
           </span>
@@ -74,25 +74,44 @@ const Section6 = forwardRef((props,ref) => {
           </div>
           <div className="input-group full-width">
             <label>Select an option</label>
-            <select name="workshop" onChange={handleChange} required defaultValue="">
-               
-              <option value="" disabled>Workshop Interested in</option>
-              <option value="Arts Administration: Unlocking a New Stream of Income">Arts Administration: Unlocking a New Stream of Income</option>
-              <option value="Producing Your Own Work: From Idea to Stage">Producing Your Own Work: From Idea to Stage</option>
-              <option value="Dance Contract Essentials: From Clause to Confidence">
-              Dance Contract Essentials: From Clause to Confidence
+            <select
+              name="workshop"
+              onChange={handleChange}
+              required
+              defaultValue=""
+            >
+              <option value="" disabled>
+                Workshop Interested in
               </option>
-              <option value="Fundraising and Grant Writing for Dancers">Fundraising and Grant Writing for Dancers</option>
-              <option value="Resume/letter">Resume/Cover Letter Guidance</option>
+              <option value="Arts Administration: Unlocking a New Stream of Income">
+                Arts Administration: Unlocking a New Stream of Income
+              </option>
+              <option value="Producing Your Own Work: From Idea to Stage">
+                Producing Your Own Work: From Idea to Stage
+              </option>
+              <option value="Dance Contract Essentials: From Clause to Confidence">
+                Dance Contract Essentials: From Clause to Confidence
+              </option>
+              <option value="Fundraising and Grant Writing for Dancers">
+                Fundraising and Grant Writing for Dancers
+              </option>
+              <option value="Resume/letter">
+                Resume/Cover Letter Guidance
+              </option>
               <option value="somethin-else">Something else</option>
             </select>
           </div>
 
           <div className="input-group full-width">
             <label>Notes</label>
-            <textarea id="summary" name="summary" rows="3" onChange={handleChange} ></textarea>
+            <textarea
+              id="summary"
+              name="summary"
+              rows="3"
+              onChange={handleChange}
+            ></textarea>
           </div>
-    
+
           <button type="submit" className="submit-button">
             Submit
           </button>

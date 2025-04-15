@@ -20,7 +20,7 @@ const Section5 = () => {
     }
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [isOpen]);
-   // Auto-scroll to top when modal opens
+  // Auto-scroll to top when modal opens
   useEffect(() => {
     if (isOpen) {
       window.scrollTo(0, 0); // Scroll page to top
@@ -31,20 +31,18 @@ const Section5 = () => {
   }, [isOpen]);
 
   const section5Ref = useRef();
-    // Auto-scroll to Section 5 when modal opens
-    useEffect(() => {
-      if (isOpen && section5Ref.current) {
-        section5Ref.current.scrollIntoView();
-      }
-    }, [isOpen]);
-
-  
+  // Auto-scroll to Section 5 when modal opens
+  useEffect(() => {
+    if (isOpen && section5Ref.current) {
+      section5Ref.current.scrollIntoView();
+    }
+  }, [isOpen]);
 
   return (
     <div className="section5" ref={section5Ref}>
       {isOpen ? (
-         <div className="modal-container">
-        <Modal modalRef={modalRef} />
+        <div className="modal-container">
+          <Modal modalRef={modalRef} />
         </div>
       ) : (
         <div className="section5-content">
@@ -91,11 +89,13 @@ const Section5 = () => {
             </div>
 
             <div className="section5-btn" onClick={() => setIsOpen(true)}>
-              <Button className="section5-button" variant="gradient" text="Learn more about Kira" />
+              <Button
+                className="section5-button"
+                variant="gradient"
+                text="Learn more about Kira"
+              />
             </div>
           </div>
-
-         
         </div>
       )}
     </div>

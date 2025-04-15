@@ -24,7 +24,7 @@
   transform: translateX(-50%);
 }
 .section3-heading {
-  font-size: 96px;
+  font-size: 6rem;
   font-family: "Anton";
   color: white;
   margin-top: -6.6%;
@@ -91,7 +91,7 @@ z-index: 1;
 }
 
 .workshop-title {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 2rem;
   font-weight: 900;
@@ -101,7 +101,7 @@ z-index: 1;
 }
 
 .workshop-description {
-  font-size: 17px;
+  font-size: 1.063rem;
   line-height: 24px;
   color: white;
 }
@@ -165,7 +165,7 @@ z-index: 1;
     left: 53%;
   }
   .section3-heading {
-    font-size: 70px;
+    font-size: 4.375rem;
   }
   .section3-layer{
     width:217.28px;
@@ -179,11 +179,11 @@ z-index: 1;
     
   }
   .workshop-description{
-    font-size: 15px;
+    font-size: 0.938rem;
     line-height: 20px;
   }
   .workshop-title{
-    font-size: 17px;
+    font-size:1.063rem;
     line-height: 20px;
   }
   .section3-gradient1,.section3-small-circle,.section3-gradient1,.section3-large-circle,.section3-gradient2,.section3-large-circle-2,.section3-gradient3{
@@ -218,7 +218,7 @@ z-index: 1;
     top: 2rem;
   }
   .section3-heading{
-    font-size: 40px;
+    font-size: 2.5rem;
     text-align: center;
   }
   .section3-layer{
@@ -232,13 +232,14 @@ z-index: 1;
     height: 75%;
     margin:10px auto;
     gap: 25px;
+    padding-right: 12px;
   }
   .workshop-title{
-    font-size: 17px;
+    font-size:1.063rem;
     line-height: 20px;
   }
   .workshop-description{
-    font-size: 12px;
+    font-size: 0.9rem;
     line-height: 20px;
   }
   .workshop-icon{

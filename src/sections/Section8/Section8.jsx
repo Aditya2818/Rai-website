@@ -53,14 +53,33 @@ const Section8 = ({ onNavigate }) => {
           <div className="icon">
             <img src="Fb.png" />
           </div>
-          <div className="icon" onClick={()=>{handleClick("//www.instagram.com/raiartsinitiative?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==")}}>
+          <div
+            className="icon"
+            onClick={() => {
+              handleClick(
+                "//www.instagram.com/raiartsinitiative?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+              );
+            }}
+          >
             {" "}
             <img src="Ig.png" />
           </div>
-          <div className="icon" onClick={()=>{handleClick('https://api.whatsapp.com/send?phone=18325187747')}}>
+          <div
+            className="icon"
+            onClick={() => {
+              handleClick("https://api.whatsapp.com/send?phone=18325187747");
+            }}
+          >
             <img src="Wp.png" />
           </div>
-          <div className="icon" onClick={()=>{handleClick('https://youtube.com/@raiartsinitative?si=6nqIpZti3sWcmeEq')}}>
+          <div
+            className="icon"
+            onClick={() => {
+              handleClick(
+                "https://youtube.com/@raiartsinitative?si=6nqIpZti3sWcmeEq",
+              );
+            }}
+          >
             <img src="YT.png" />
           </div>
         </div>

@@ -1,6 +1,6 @@
 import React, { forwardRef } from "react";
 import { useRef } from "react";
-import { motion,useInView } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import "./Section3.css";
 import workshops from "./Workshops";
 import Button from "../../components/Button/Button";
@@ -39,11 +39,10 @@ const Section3 = forwardRef(({ onNavigate }, ref) => {
         <span className="section3-first-heading">OUR EXCLUSIVE </span>
         <span className="section3-second-heading">WORKSHOPS</span>
       </div>
-      <div  ref={cardRef} className="section3-grid">
+      <div ref={cardRef} className="section3-grid">
         {workshops.map((workshop, index) => {
           return (
             <motion.div
-             
               className="workshop-card"
               custom={index}
               initial="hidden"

@@ -344,7 +344,7 @@
     font-family: "Anton";
   color: #fcfffe;
   margin: 0px;
-  font-size:64px;
+  font-size:50px;
   line-height: 70px;
   background: linear-gradient(90deg, #FFE14C 0%, #FFFFFF 70%);
   -webkit-background-clip: text;
@@ -353,7 +353,7 @@
   .section1-small-circle{
     top:12%;
     right: -20%;
-    opacity: 60%;
+    opacity: 80%;
   }
   .section1-div1-button2{
     padding: 12px 25px !important;
@@ -362,7 +362,7 @@
   }
   .section1-small-circle-2{
     top: 32%;
-    opacity: 60%;
+    opacity: 80%;
     left: -8%;
     width: 88px;
   }

@@ -1,4 +1,4 @@
-import React  from "react";
+import React from "react";
 import "./Section1.css";
 import Nav from "./Nav/Nav";
 import Button from "../../components/Button/Button";
@@ -8,7 +8,7 @@ const Section1 = ({ onNavigate }) => {
     window.open(
       "https://calendly.com/raiartsinitiative/30min",
       "_blank",
-      "noopener,noreferrer"
+      "noopener,noreferrer",
     );
   };
   return (

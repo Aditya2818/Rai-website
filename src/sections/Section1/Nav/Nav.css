@@ -8,12 +8,20 @@
   border-radius: 30px;
   margin: 20px auto 0px auto;
   padding: 0px 2rem;
+
   /* position: fixed;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
   transition: all 0.3s ease-in-out; */
 }
+
+/* .section1-nav,
+.section1-nav-mobile {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+} */
 
 .section1-nav-mobile {
   display: none;

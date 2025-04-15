@@ -7,11 +7,11 @@ const TestimonialCarousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const getCardClass = (index) => {
     if (index === activeIndex) return "testimonial-card active";
-    if (index === (activeIndex + 1) % testimonials.length )
+    if (index === (activeIndex + 1) % testimonials.length)
       return "testimonial-card right";
-    if (index === (activeIndex - 1 +testimonials.length ) % testimonials.length)
+    if (index === (activeIndex - 1 + testimonials.length) % testimonials.length)
       return "testimonial-card left";
-    return "testimonial-card  leftFar"
+    return "testimonial-card  leftFar";
   };
 
   const goToNext = () => {
@@ -20,7 +20,8 @@ const TestimonialCarousel = () => {
 
   const goToPrev = () => {
     setActiveIndex(
-      (prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length
+      (prevIndex) =>
+        (prevIndex - 1 + testimonials.length) % testimonials.length,
     );
   };
 
@@ -35,7 +36,7 @@ const TestimonialCarousel = () => {
     <div className="testimonial-carousel-container" {...swipeHandlers}>
       <div className="testimonial-carousel">
         {testimonials.map((testimonial, index) => (
-          <div key={index} className={getCardClass(index) }>
+          <div key={index} className={getCardClass(index)}>
             <div className="profile-image-wrapper">
               <img
                 src={testimonial.image}
@@ -58,9 +59,19 @@ const TestimonialCarousel = () => {
 
       {/*Dots */}
       <div className="dots-container">
-        <div className="dot" onClick={()=>{goToPrev()} }/>
+        <div
+          className="dot"
+          onClick={() => {
+            goToPrev();
+          }}
+        />
         <div className="dot active" />
-        <div className="dot" onClick={()=>{goToNext()} } />
+        <div
+          className="dot"
+          onClick={() => {
+            goToNext();
+          }}
+        />
       </div>
     </div>
   );

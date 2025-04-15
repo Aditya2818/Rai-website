@@ -3,13 +3,11 @@ import "./Modal.css";
 import React from "react";
 
 const Modal = ({ modalRef }) => {
- 
   return (
     <div className="Modal" ref={modalRef}>
-            
-            <div className="Modal-content"></div>
+      <div className="Modal-content"></div>
       <div className="first-para">
-      <img src="./kira.png" className="kira-img" />
+        <img src="./kira.png" className="kira-img" />
         <div>
           <p>
             <b>Kira Rai Daniel</b> is the Founder and Director of the Rai Arts
@@ -44,15 +42,20 @@ const Modal = ({ modalRef }) => {
           required to succeed in the greater dance world. Initially resistant to
           learning business skills, Kira felt lost upon graduating from
           undergrad, unsure of how to navigate the business aspects of being an
-          artist.<b> “Being a dancer is a business just as much as it is a
-          performance,” </b>she realized. It wasn’t until her master’s studies in
-          arts administration that she understood the importance of this
-          knowledge and wished it had been part of her undergraduate education.
-          With this realization, Kira became committed to empowering dancers
-          with the tools to navigate the broader dance industry and to find ways
-          to generate sustainable income. She believes learning these skills
-          should be a right, not a privilege, and strives to equip dancers with
-          the confidence and abilities to thrive, both on and off the stage.
+          artist.
+          <b>
+            {" "}
+            “Being a dancer is a business just as much as it is a
+            performance,”{" "}
+          </b>
+          she realized. It wasn’t until her master’s studies in arts
+          administration that she understood the importance of this knowledge
+          and wished it had been part of her undergraduate education. With this
+          realization, Kira became committed to empowering dancers with the
+          tools to navigate the broader dance industry and to find ways to
+          generate sustainable income. She believes learning these skills should
+          be a right, not a privilege, and strives to equip dancers with the
+          confidence and abilities to thrive, both on and off the stage.
         </p>
         <p>
           Throughout her academic journey, Kira immersed herself in key areas of
