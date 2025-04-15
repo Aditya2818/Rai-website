@@ -1,7 +1,7 @@
 import React, { useState, forwardRef } from "react";
 import "./Section6.css";
 import ResponseCard from "../../components/Response/Response";
-import { form } from "framer-motion/client";
+
 
 const Section6 = forwardRef((props, ref) => {
   const [formData, setFormData] = useState({
@@ -13,30 +13,47 @@ const Section6 = forwardRef((props, ref) => {
     notes: "",
   });
 
+  const [submitted,setSubmitted] = useState(false);
+
   const handleChange = (e) => {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  // https://script.google.com/macros/s/AKfycby_erF26rqwOgTrhYHgsWsERd0Gb7U22rNPizY7nhCEZHAhdqgU8L-hlsYxzzbpu3iKDg/exec
   const handleSubmit = (e) => {
     e.preventDefault();
-    const url = "https://script.google.com/macros/s/AKfycby_erF26rqwOgTrhYHgsWsERd0Gb7U22rNPizY7nhCEZHAhdqgU8L-hlsYxzzbpu3iKDg/exec"
-    fetch(url,{
-      method:"POST",
-      mmode:"cors",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body:(`Name=${formData.name}&Email=${formData.email}&City=${formData.city}&Phone=${formData.phone}&Workshop=${formData.workshop}&Notes=${formData.notes}`)
-    }).then(res=>res.text()).then(data=>{
-      alert(data)
-    }).catch(error=>console.log(error))
+    const url = "https://script.google.com/macros/s/AKfycbwybRCrIuk9Qd1jiyJfyx0ZtKHQ9U8Af2RQxyQ64b9yrt6V5Z_AZxpd53vxTO2yeZQT9A/exec";
+    
+    fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+      body: new URLSearchParams({
+        Name: formData.name,
+        Email: formData.email,
+        City: formData.city,
+        Phone: formData.phone,
+        Workshop: formData.workshop,
+        Notes: formData.notes
+      }).toString()
+    })
+    .then((res) => res.text())
+    .then(() => {
+      setSubmitted(true);
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+      alert("Failed to submit.");
+    });
   };
+  
 
   return (
     <div ref={ref} className="section6">
       <div className="section6-content">
         <img className="section6-img" src="./Photo.png" />
         <form className="section6-form" onSubmit={handleSubmit}>
-          {/* <ResponseCard /> */}
+          {submitted?<ResponseCard/>:<></>}
           <span className="form-heading">
             Share your info and we’ll reach out!
           </span>
