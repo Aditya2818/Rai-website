@@ -1,6 +1,6 @@
 import React from "react";
 import "./Section8.css";
-import "../section1/Nav/Nav.css";
+
 
 const Section8 = ({ onNavigate }) => {
   const handleClick = (link) => {
@@ -17,18 +17,6 @@ const Section8 = ({ onNavigate }) => {
           successful and sustainable career in dance.
         </p>
       </div>
-      {/* <div className="section8-form">
-        <div className="input-group">
-          <label>Email id</label>
-          <input
-            type="email"
-            name="email"
-            placeholder="Enter your email id"
-            // onChange={handleChange}
-            required
-          />
-        </div>
-      </div> */}
       <div className="section8-center">
         <p className="quick-link">QUICK LINKS</p>
         <div className="links">

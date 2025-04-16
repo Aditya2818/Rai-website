@@ -121,27 +121,7 @@
   background: none  !important;
 }
 
-.underline-hover{
-  position: relative;
- 
-}
 
-.underline-hover::after {
-  content: "";
-  position: absolute;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background:  linear-gradient(to right, #aafcd4 0%, #71b185 42%, #5e7a5a 98%); 
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.3s ease;
-}
-
-.underline-hover:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
-}
 
 @media (max-width: 1024px) and (min-width: 821px) {
   .section1-nav {

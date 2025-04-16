@@ -54,3 +54,26 @@ body {
 .section4-white-bubble3{
   animation: float 5s ease-in infinite;
 }
+
+.underline-hover{
+  position: relative;
+  display: inline-block;
+}
+
+.underline-hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background:  linear-gradient(to right, #aafcd4 0%, #71b185 42%, #5e7a5a 98%); 
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.underline-hover:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
