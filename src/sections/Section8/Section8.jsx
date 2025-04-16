@@ -31,6 +31,13 @@ const Section8 = ({ onNavigate }) => {
           </p>
         </div>
       </div>
+      <div className="mobile-only">
+      <p>
+          At Rai Arts Initiative, our mission is to equip aspiring dancers with
+          the essential business knowledge and skills needed to navigate a
+          successful and sustainable career in dance.
+        </p>
+      </div>
       <div className="section8-right">
         <p className="follow-link">FOLLOW US</p>
         <div className="icons">
