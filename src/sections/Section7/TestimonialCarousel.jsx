@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Carousel.css";
 import { useSwipeable } from "react-swipeable";
 import testimonials from "./Testimonials";
@@ -32,16 +32,32 @@ const TestimonialCarousel = () => {
     trackMouse: true,
   });
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prev) => (prev + 1) % testimonials.length);
+    }, 3000); // every 3 seconds
+
+    return () => clearInterval(interval); // cleanup on unmount
+  }, []);
+
   return (
     <div className="testimonial-carousel-container" {...swipeHandlers}>
       <div className="testimonial-carousel">
-        <img className="left-arrow"  src="left-arrow.png"  onClick={() => {
+        <img
+          className="left-arrow"
+          src="left-arrow.png"
+          onClick={() => {
             goToPrev();
-          }}/>
-        <img className="right-arrow" src="right-arrow.png"  onClick={() => {
+          }}
+        />
+        <img
+          className="right-arrow"
+          src="right-arrow.png"
+          onClick={() => {
             goToNext();
-          }}/>
-        
+          }}
+        />
+
         {testimonials.map((testimonial, index) => (
           <div key={index} className={getCardClass(index)}>
             <div className="profile-image-wrapper">
@@ -62,12 +78,10 @@ const TestimonialCarousel = () => {
             </div>
           </div>
         ))}
-       
       </div>
 
       {/*Dots */}
       <div className="dots-container">
-        
         <div
           className="dot"
           onClick={() => {

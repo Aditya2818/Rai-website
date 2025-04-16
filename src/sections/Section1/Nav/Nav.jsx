@@ -61,7 +61,10 @@ const Nav = ({ functionality }) => {
       {/* Mobile */}
       <div className="section1-nav-mobile">
         <div className="section1-nav-mobile-logo">
-          <img className="section1-nav-mobile-logo-img" src="/logo.png" />
+          <img
+            className="section1-nav-mobile-logo-img"
+            src="/Mobile-logo.png"
+          />
         </div>
         <div className="section1-nav-mobile-button">
           <Button

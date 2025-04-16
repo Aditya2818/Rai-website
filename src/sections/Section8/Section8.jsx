@@ -1,7 +1,6 @@
 import React from "react";
 import "./Section8.css";
 
-
 const Section8 = ({ onNavigate }) => {
   const handleClick = (link) => {
     window.open(link, "_blank", "noopener,noreferrer");
@@ -32,7 +31,7 @@ const Section8 = ({ onNavigate }) => {
         </div>
       </div>
       <div className="mobile-only">
-      <p>
+        <p>
           At Rai Arts Initiative, our mission is to equip aspiring dancers with
           the essential business knowledge and skills needed to navigate a
           successful and sustainable career in dance.
