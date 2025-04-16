@@ -35,7 +35,7 @@ const Nav = ({ functionality }) => {
       <div className="section1-nav">
         <img
           className="section1-nav-middle"
-          src="./logo.png"
+          src="./Mobile-logo.png"
           onClick={handleReload}
         />
         <div className="section1-nav-left">
