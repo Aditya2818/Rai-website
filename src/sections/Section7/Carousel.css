@@ -16,6 +16,17 @@
   justify-content: center;
   align-items: center;
 }
+.left-arrow,.right-arrow{
+  position: absolute;
+  z-index: 1000;
+  cursor: pointer;
+}
+.left-arrow{
+  left: 3rem;
+}
+.right-arrow{
+  right: 3rem;
+}
 
 .testimonial-card {
   position: absolute;
@@ -167,8 +178,14 @@
     display: none;
   }
   .testimonial-card.active {
-    width: 80%;
-    height: 200px;
+    width: 75%;
+    height: 220px;
+  }
+  .left-arrow{
+    left: 0;
+  }
+  .right-arrow{
+    right: 0;
   }
   .profile-image.profile-image.active-img {
     width: 95px;

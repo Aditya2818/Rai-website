@@ -35,6 +35,13 @@ const TestimonialCarousel = () => {
   return (
     <div className="testimonial-carousel-container" {...swipeHandlers}>
       <div className="testimonial-carousel">
+        <img className="left-arrow"  src="left-arrow.png"  onClick={() => {
+            goToPrev();
+          }}/>
+        <img className="right-arrow" src="right-arrow.png"  onClick={() => {
+            goToNext();
+          }}/>
+        
         {testimonials.map((testimonial, index) => (
           <div key={index} className={getCardClass(index)}>
             <div className="profile-image-wrapper">
@@ -55,10 +62,12 @@ const TestimonialCarousel = () => {
             </div>
           </div>
         ))}
+       
       </div>
 
       {/*Dots */}
       <div className="dots-container">
+        
         <div
           className="dot"
           onClick={() => {
