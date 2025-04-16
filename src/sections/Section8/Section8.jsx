@@ -1,18 +1,8 @@
 import React from "react";
 import "./Section8.css";
+import "../section1/Nav/Nav.css";
 
 const Section8 = ({ onNavigate }) => {
-  // const [email, setemail] = useState("");
-
-  // const handleChange = (e) => {
-  //   setemail((prev) => ({ ...prev, [e.target.name]: e.target.value }));
-  // };
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   console.log("Form Data:", email);
-  // };
-
   const handleClick = (link) => {
     window.open(link, "_blank", "noopener,noreferrer");
   };
@@ -42,9 +32,15 @@ const Section8 = ({ onNavigate }) => {
       <div className="section8-center">
         <p className="quick-link">QUICK LINKS</p>
         <div className="links">
-          <p onClick={() => onNavigate.toSection4()}>About RAI</p>
-          <p onClick={() => onNavigate.toSection3()}>Our Workshops</p>
-          <p onClick={() => onNavigate.toSection6()}>Contact us</p>
+          <p onClick={() => onNavigate.toSection4()}>
+            <span className="underline-hover">About RAI</span>
+          </p>
+          <p onClick={() => onNavigate.toSection3()}>
+            <span className="underline-hover">Our Workshops</span>
+          </p>
+          <p onClick={() => onNavigate.toSection6()}>
+            <span className="underline-hover">Contact us</span>
+          </p>
         </div>
       </div>
       <div className="section8-right">

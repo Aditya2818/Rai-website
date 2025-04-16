@@ -36,9 +36,7 @@
   font-size: 21px;
   color: #314529;
 }
-.section1-nav-left p:hover{
-    text-decoration: underline;
-}
+
 .section1-nav-left p,
 .section1-nav img {
   cursor: pointer;
@@ -112,12 +110,37 @@
   padding-left: 0px;
 }
 .book-button {
-  width: 92px !important;
+  width: 100px !important;
   height: 30px !important;
   padding: 5px !important;
   font-size: 14px !important;
   text-align: center !important;
   line-height: 0px !important;
+}
+.book-button::after,.book-button::before{
+  background: none  !important;
+}
+
+.underline-hover{
+  position: relative;
+ 
+}
+
+.underline-hover::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background:  linear-gradient(to right, #aafcd4 0%, #71b185 42%, #5e7a5a 98%); 
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.underline-hover:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 @media (max-width: 1024px) and (min-width: 821px) {

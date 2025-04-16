@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./Nav.css";
 import Button from "../../../components/Button/Button";
 
@@ -26,14 +26,28 @@ const Nav = ({ functionality }) => {
     );
   };
 
+  const handleReload = () => {
+    window.location.reload();
+  };
+
   return (
     <>
       <div className="section1-nav">
-        <img className="section1-nav-middle" src="./logo.png" />
+        <img
+          className="section1-nav-middle"
+          src="./logo.png"
+          onClick={handleReload}
+        />
         <div className="section1-nav-left">
-          <p onClick={functionality.toSection4}>About RAI</p>
-          <p onClick={functionality.toSection3}>Our Workshops</p>
-          <p onClick={functionality.toSection6}>Contact us</p>
+          <p className="underline-hover" onClick={functionality.toSection4}>
+            About RAI
+          </p>
+          <p className="underline-hover" onClick={functionality.toSection3}>
+            Our Workshops
+          </p>
+          <p className="underline-hover" onClick={functionality.toSection6}>
+            Contact us
+          </p>
         </div>
 
         <Button

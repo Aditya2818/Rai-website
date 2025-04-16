@@ -105,7 +105,7 @@ const Section6 = forwardRef((props, ref) => {
             </div>
           </div>
           <div className="input-group full-width">
-            <label>Select an option</label>
+            <label>Interested in</label>
             <select
               name="workshop"
               onChange={handleChange}
@@ -113,7 +113,7 @@ const Section6 = forwardRef((props, ref) => {
               defaultValue=""
             >
               <option value="" disabled>
-                Workshop Interested in
+                Select an option...
               </option>
               <option value="Arts Administration: Unlocking a New Stream of Income">
                 Arts Administration: Unlocking a New Stream of Income

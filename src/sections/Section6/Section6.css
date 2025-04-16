@@ -61,7 +61,7 @@ border:1px solid #092C11;
   border-radius: 14px;
   border: 1px solid #86a38d;
   font-size: 1rem;
-  background: #fffdeb;
+  background-color: #fffdeb;
 }
 
 .full-width {
@@ -99,6 +99,11 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance:none;
+  background-image: url('https://cdn-icons-png.flaticon.com/512/2985/2985150.png'); 
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+ 
 }
 .section6-img{
   height: 800px;

@@ -39,9 +39,6 @@
     font-size: 20px;
     font-weight: bold;
 }
-.links>p:hover{
-    text-decoration: underline;
-}
 .section8-right{
     display: flex;
     flex-direction: column;

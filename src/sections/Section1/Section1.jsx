@@ -83,7 +83,7 @@ const Section1 = ({ onNavigate }) => {
           <Button
             behaviour={handleClick}
             variant="gradient"
-            text="Book A Free Coaching Session"
+            text="Book a Free Coaching Session"
             className="section1-div1-button2"
           />
         </div>
