@@ -74,7 +74,7 @@ const Section6 = forwardRef((props, ref) => {
               />
             </div>
             <div className="input-group">
-              <label>Email id</label>
+              <label>Email ID</label>
               <input
                 type="email"
                 name="email"
