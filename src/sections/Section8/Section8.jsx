@@ -9,12 +9,14 @@ const Section8 = ({ onNavigate }) => {
   return (
     <div className="section8">
       <div className="section8-left">
-        <img className="final-logo" src="./final-logo.png" />
+        <img className="final-logo" src="./Mobile-logo.png" />
         <p>
           At Rai Arts Initiative, our mission is to equip aspiring dancers with
           the essential business knowledge and skills needed to navigate a
           successful and sustainable career in dance.
         </p>
+        {/* <p style={{fontSize:'14px'}}>© 2025 RAI Arts Initiative. All rights reserved.
+        </p> */}
       </div>
       <div className="section8-center">
         <p className="quick-link">QUICK LINKS</p>
@@ -36,6 +38,7 @@ const Section8 = ({ onNavigate }) => {
           the essential business knowledge and skills needed to navigate a
           successful and sustainable career in dance.
         </p>
+        
       </div>
       <div className="section8-right">
         <p className="follow-link">FOLLOW US</p>
@@ -73,6 +76,8 @@ const Section8 = ({ onNavigate }) => {
             <img src="YT.png" />
           </div>
         </div>
+        <p style={{fontSize:'14px', marginTop:'2rem'}}>© 2025 RAI Arts Initiative. All rights reserved.
+        </p>
       </div>
     </div>
   );

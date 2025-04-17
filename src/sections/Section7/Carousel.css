@@ -181,11 +181,15 @@
     width: 75%;
     height: 220px;
   }
+  .left-arrow,.right-arrow{
+    width:30px;
+  height:30px;
+  }
   .left-arrow{
-    left: 0;
+    left: 0.3rem;
   }
   .right-arrow{
-    right: 0;
+    right: 0.3rem;
   }
   .profile-image.profile-image.active-img {
     width: 95px;

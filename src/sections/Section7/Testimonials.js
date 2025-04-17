@@ -28,7 +28,7 @@ const testimonials = [
       "Very easy to talk to, I felt heard and supported throughout our conversation. I highly recommend bringing Kira in to discuss with dance majors students.",
   },
   {
-    name: "Danielle Hoffman ",
+    name: "Danielle Hoffman",
     title: "Dancer",
     image: "/Blank user.png",
     quote:

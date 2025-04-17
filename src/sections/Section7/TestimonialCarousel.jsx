@@ -32,13 +32,15 @@ const TestimonialCarousel = () => {
     trackMouse: true,
   });
 
+  const [pause,setPause] = useState(false);
+
   useEffect(() => {
     const interval = setInterval(() => {
-      setActiveIndex((prev) => (prev + 1) % testimonials.length);
-    }, 3000); // every 3 seconds
-
-    return () => clearInterval(interval); // cleanup on unmount
-  }, []);
+    if(!pause){
+      setActiveIndex((prev) => (prev + 1) % testimonials.length);}
+    }, 4500); 
+    return () => clearInterval(interval); 
+  }, [pause]);
 
   return (
     <div className="testimonial-carousel-container" {...swipeHandlers}>
@@ -59,7 +61,8 @@ const TestimonialCarousel = () => {
         />
 
         {testimonials.map((testimonial, index) => (
-          <div key={index} className={getCardClass(index)}>
+          <div key={index} className={getCardClass(index)} onMouseEnter={()=>{
+            setPause(true)}} onMouseLeave={()=>setPause(false)}>
             <div className="profile-image-wrapper">
               <img
                 src={testimonial.image}

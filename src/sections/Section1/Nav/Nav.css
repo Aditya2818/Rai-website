@@ -149,4 +149,7 @@
   .hamburger-menu {
     display: block;
   }
+  .book-button{
+    width:8.5rem !important;
+  }
 }

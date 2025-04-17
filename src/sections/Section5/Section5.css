@@ -142,6 +142,9 @@
     background-position: center center;
     background-repeat: no-repeat;
   }
+  .section5-text-last {
+    margin-top: 5rem;
+  }
   .section5-content{
     width: 75%;
     font-size: 16px;
@@ -152,6 +155,7 @@
     line-height: 18px;
     font-size: 16px;
   }
+
   .section5-text7{
     font-size: 16px;
   }
@@ -163,14 +167,14 @@
     left: -2rem;
   }
   .comma-close{
-    top: 19rem;
-    right: -2rem;
+    top: 21.5rem;
+    right: -1rem;
   }
   .section5-text2,.section5-text3,.section5-text4,.section5-text5,.section5-text6{
     display: inline;
   }
   .section5-text7{
-    margin-top: 8rem;
+    margin-top: 1rem;
   }
   .section5-text8{
     font-size: 27px;
