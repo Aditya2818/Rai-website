@@ -73,7 +73,7 @@
 }
 
 .educrafter{
-    text-align: left  !important;
+    text-align: left;
     width: 100%;
 }
 .section8-right,.section8-center{
@@ -132,5 +132,8 @@
         line-height: 19px;
         margin-top: -1rem;
        
+    }
+    .educrafter{
+        text-align: center;
     }
 }
