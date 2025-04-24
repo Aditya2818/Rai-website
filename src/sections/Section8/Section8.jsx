@@ -78,6 +78,11 @@ const Section8 = ({ onNavigate }) => {
         </div>
         <p style={{fontSize:'14px', marginTop:'2rem'}}>© 2025 RAI Arts Initiative. All rights reserved.
         </p>
+        <p className="educrafter" style={{fontSize:'14px', marginTop:'0rem'}}>"Site crafted by <span style={{cursor:"pointer"}} onClick={()=>{
+            handleClick("http://EdCrafter.com")
+          }}>
+             EdCrafter LLC."
+          </span></p>
       </div>
     </div>
   );
