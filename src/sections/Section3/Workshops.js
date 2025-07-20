@@ -6,22 +6,24 @@ const workshops = [
       "This workshop prepares you to step into the world of arts administration. From event planning and management to marketing and fundraising, participants learn about diverse opportunities for making an income in dance and the arts industry.",
   },
   {
-    title: "Producing Your Own Work: From Idea to Stage",
+    title: "Beyond the Stage: Expanding Your Career Options as a Dancer",
     icon: "./Icon2.png",
     description:
-      "This workshop equips you to become a dynamic self-producer—from developing a concept and budgeting to marketing, securing a venue, and managing logistics. Whether you're organizing a solo project, a small production, or a touring performance, you'll gain the tools to take Control of your creative career!",
+      "This workshop explores a wide range of career possibilities for dancers — from arts education and administration to law, physical therapy, entrepreneurship, and more. You’ll gain a clear understanding of how your artistic skills can transfer into new and exciting fields, empowering you to envision a career path that aligns with your strengths, passions, and long-term goals.",
   },
   {
-    title: "Dance Contract Essentials: From Clause to Confidence",
+    title:
+      "Building Your Career Confidence: Tools for Navigating Uncertainty in the Dance Field",
     icon: "./Icon3.png",
     description:
-      "This workshop teaches students how to review and write their own contract in the event that one has not been given. It offers deep insights into generous and ungenerous contracts and ways to protect oneself from unfair practices and working conditions.",
+      "The workshop helps build confidence through mindset strategies, career planning tools, and redefining what success looks like. Whether you’re auditioning, freelancing, or pivoting, this will give you practical strategies to feel more secure in your journey.",
   },
   {
-    title: "Fundraising and Grant Writing for Dancers",
+    title:
+      "Finding Work as an Artist: Job Hunting & Career Strategy for Dancers",
     icon: "./Icon4.png",
     description:
-      "This workshop offers an in-depth walkthrough of the process for acquiring money to fund a project. Participants learn how to create a budget, find grants, and build relationships with funding-making entities.",
+      "These workshops explore practical strategies for searching, applying, and positioning yourself for opportunities both in and beyond the studio. We’ll cover essential tools such as job hunting websites, resumes, cover letters, and internships, while also discussing how to identify the types of roles that align with your skills and goals. Whether you’re pursuing opportunities in performance, arts administration, education, or creative industries, this session will help you build a clear and actionable career strategy.",
   },
 ];
 

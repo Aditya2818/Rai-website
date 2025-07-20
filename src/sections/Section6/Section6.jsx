@@ -55,103 +55,102 @@ const Section6 = forwardRef((props, ref) => {
   };
 
   return (
-    <div ref={ref} className="section6">
-      <div className="section6-content">
-        <img className="section6-img" src="./Photo.png" />
-        <form className="section6-form" onSubmit={handleSubmit}>
-          <span className="form-heading">
+    <div ref={ref} className='section6'>
+      <div className='section6-content'>
+        <img className='section6-img' src='./Photo.png' />
+        <form className='section6-form' onSubmit={handleSubmit}>
+          <span className='form-heading'>
             Share your info and we’ll reach out!
           </span>
-          <div className="form-grid">
-            <div className="input-group">
+          <div className='form-grid'>
+            <div className='input-group'>
               <label>Your name</label>
               <input
-                type="text"
-                name="name"
-                placeholder="Enter your name"
+                type='text'
+                name='name'
+                placeholder='Enter your name'
                 onChange={handleChange}
                 required
               />
             </div>
-            <div className="input-group">
+            <div className='input-group'>
               <label>Email ID</label>
               <input
-                type="email"
-                name="email"
-                placeholder="Enter your email id"
+                type='email'
+                name='email'
+                placeholder='Enter your email id'
                 onChange={handleChange}
                 required
               />
             </div>
 
-            <div className="input-group">
+            <div className='input-group'>
               <label>City</label>
               <input
-                type="text"
-                name="city"
-                placeholder="Enter your location"
+                type='text'
+                name='city'
+                placeholder='Enter your location'
                 onChange={handleChange}
               />
             </div>
 
-            <div className="input-group">
+            <div className='input-group'>
               <label>Phone</label>
               <input
-                type="tel"
-                name="phone"
-                placeholder="Enter your number"
+                type='tel'
+                name='phone'
+                placeholder='Enter your number'
                 onChange={handleChange}
               />
             </div>
           </div>
-          <div className="input-group full-width">
+          <div className='input-group full-width'>
             <label>Interested in</label>
             <select
-              name="workshop"
+              name='workshop'
               onChange={handleChange}
               required
-              defaultValue=""
-            >
-              <option value="" disabled>
+              defaultValue=''>
+              <option value='' disabled>
                 Select an option...
               </option>
-              <option value="Arts Administration: Unlocking a New Stream of Income">
+              <option value='Arts Administration: Unlocking a New Stream of Income'>
                 Arts Administration: Unlocking a New Stream of Income
               </option>
-              <option value="Producing Your Own Work: From Idea to Stage">
-                Producing Your Own Work: From Idea to Stage
+              <option value='Beyond the Stage: Expanding Your Career Options as a Dancer'>
+                Beyond the Stage: Expanding Your Career Options as a Dancer
               </option>
-              <option value="Dance Contract Essentials: From Clause to Confidence">
-                Dance Contract Essentials: From Clause to Confidence
+              <option value='Building Your Career Confidence: Tools for Navigating Uncertainty in the Dance Field'>
+                Building Your Career Confidence: Tools for Navigating
+                Uncertainty in the Dance Field
               </option>
-              <option value="Fundraising and Grant Writing for Dancers">
-                Fundraising and Grant Writing for Dancers
+              <option value='Finding Work as an Artist: Job Hunting & Career Strategy for Dancers'>
+                Finding Work as an Artist: Job Hunting & Career Strategy for
+                Dancers
               </option>
-              <option value="Resume/letter">
+              <option value='Resume/letter'>
                 Resume/Cover Letter Guidance
               </option>
-              <option value="somethin-else">Something else</option>
+              <option value='somethin-else'>Something else</option>
             </select>
           </div>
 
-          <div className="input-group full-width">
+          <div className='input-group full-width'>
             <label>Notes</label>
             <textarea
-              id="notes"
-              name="notes"
-              rows="3"
-              onChange={handleChange}
-            ></textarea>
+              id='notes'
+              name='notes'
+              rows='3'
+              onChange={handleChange}></textarea>
           </div>
 
           {submitted ? (
             <ResponseCard />
           ) : !isSubmitting ? (
             <button
-              type="submit"
-              className="submit-button"
-              disabled={isSubmitting}
-            >
+              type='submit'
+              className='submit-button'
+              disabled={isSubmitting}>
               Submit
             </button>
           ) : null}

@@ -20,9 +20,9 @@ const Nav = ({ functionality }) => {
 
   const handleClick = () => {
     window.open(
-      "https://calendly.com/raiartsinitiative/30min",
+      "https://forms.gle/9dG9oo57Qmutcyxa7",
       "_blank",
-      "noopener,noreferrer",
+      "noopener,noreferrer"
     );
   };
 
@@ -32,59 +32,59 @@ const Nav = ({ functionality }) => {
 
   return (
     <>
-      <div className="section1-nav">
+      <div className='section1-nav'>
         <img
-          className="section1-nav-middle"
-          src="./logo.png"
+          className='section1-nav-middle'
+          src='./logo.png'
           onClick={handleReload}
         />
-        <div className="section1-nav-left">
-          <p className="underline-hover" onClick={functionality.toSection4}>
+        <div className='section1-nav-left'>
+          <p className='underline-hover' onClick={functionality.toSection4}>
             About RAI
           </p>
-          <p className="underline-hover" onClick={functionality.toSection3}>
+          <p className='underline-hover' onClick={functionality.toSection3}>
             Our Workshops
           </p>
-          <p className="underline-hover" onClick={functionality.toSection6}>
+          <p className='underline-hover' onClick={functionality.toSection6}>
             Contact us
           </p>
         </div>
 
         <Button
-          className="book-button"
-          variant="gradient"
+          className='book-button'
+          variant='gradient'
           text={"Let's Talk"}
           behaviour={handleClick}
         />
       </div>
 
       {/* Mobile */}
-      <div className="section1-nav-mobile">
-        <div className="section1-nav-mobile-logo">
+      <div className='section1-nav-mobile'>
+        <div className='section1-nav-mobile-logo'>
           <img
-            className="section1-nav-mobile-logo-img"
-            src="/Mobile-logo.png"
+            className='section1-nav-mobile-logo-img'
+            src='/Mobile-logo.png'
           />
         </div>
-        <div className="section1-nav-mobile-button">
+        <div className='section1-nav-mobile-button'>
           <Button
-            className="book-button"
-            variant="gradient"
+            className='book-button'
+            variant='gradient'
             text="Let's talk"
             behaviour={handleClick}
           />
-          <div className="hamburger" onClick={toggleMenu}>
-            <img className="hamburger-img" src="/Menu Burger Horizontal.png" />
+          <div className='hamburger' onClick={toggleMenu}>
+            <img className='hamburger-img' src='/Menu Burger Horizontal.png' />
           </div>
         </div>
       </div>
       {isMenuOpen && (
-        <div className="hamburger-menu">
-          <div className="hamburger-menu-top">
-            <img className="hamburger-menu-top-logo" src="/logo.png" />
+        <div className='hamburger-menu'>
+          <div className='hamburger-menu-top'>
+            <img className='hamburger-menu-top-logo' src='/logo.png' />
             <img
-              className="hamburger-menu-top-close"
-              src="/close.png"
+              className='hamburger-menu-top-close'
+              src='/close.png'
               onClick={closeMenu}
             />
           </div>

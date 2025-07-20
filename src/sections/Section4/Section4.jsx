@@ -5,34 +5,34 @@ import Button from "../../components/Button/Button";
 const Section4 = forwardRef(({ onNavigate }, ref) => {
   const handleclick = () => {
     window.open(
-      "https://calendly.com/raiartsinitiative/30min",
+      "https://forms.gle/9dG9oo57Qmutcyxa7",
       "_blank",
-      "noopener,noreferrer",
+      "noopener,noreferrer"
     );
   };
   return (
-    <div ref={ref} className="section4">
-      <img className="section4-white-bubble" src="./white_small_circle.png" />
-      <img className="section4-white-bubble2" src="./white_large_circle.png" />
-      <img className="section4-white-bubble3" src="./white_large_circle.png" />
-      <div className="sub-section4">
+    <div ref={ref} className='section4'>
+      <img className='section4-white-bubble' src='./white_small_circle.png' />
+      <img className='section4-white-bubble2' src='./white_large_circle.png' />
+      <img className='section4-white-bubble3' src='./white_large_circle.png' />
+      <div className='sub-section4'>
         <img
-          className="sub-section4-img"
-          src="./additional professional photo.png"
+          className='sub-section4-img'
+          src='./additional professional photo.png'
         />
-        <div className="section4-right-content">
-          <div className="section4-heading">
-            <img className="section4-signal" src="./Layer_2.png" />
-            <span className="section4-first-heading">ABOUT </span>
-            <span className="section4-second-heading">RAI</span>
+        <div className='section4-right-content'>
+          <div className='section4-heading'>
+            <img className='section4-signal' src='./Layer_2.png' />
+            <span className='section4-first-heading'>ABOUT </span>
+            <span className='section4-second-heading'>RAI</span>
           </div>
-          <span className="section4-sub-heading">
+          <span className='section4-sub-heading'>
             Rai Arts Initiative: Bridging the gap{" "}
-            <span className="section4-sub-heading next-line">
+            <span className='section4-sub-heading next-line'>
               between artistry and business
             </span>
           </span>
-          <div className="section4-description">
+          <div className='section4-description'>
             <p>
               At Rai Arts Initiative, our mission is to equip aspiring dancers
               with the essential business knowledge and skills needed to
@@ -57,12 +57,12 @@ const Section4 = forwardRef(({ onNavigate }, ref) => {
               </b>
             </p>
           </div>
-          <div className="section4-btn">
+          <div className='section4-btn'>
             <Button
               behaviour={handleclick}
-              variant="gradient"
+              variant='gradient'
               text={"Book a Free Coaching Session"}
-              className="section4-button"
+              className='section4-button'
             />
           </div>
         </div>
